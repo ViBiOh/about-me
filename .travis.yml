@@ -1,0 +1,20 @@
+language: node_js
+sudo: required
+services:
+- docker
+node_js: 7
+script: |
+  npm run build &&
+  docker build -t ${DOCKER_USER}/about .
+after_success: |
+  if [ "${TRAVIS_BRANCH}" == "master" ]; then
+    docker login -u ${DOCKER_USER} -p ${DOCKER_PASS} && docker push ${DOCKER_USER}/about
+  fi
+notifications:
+  email: false
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: curl -u ${DEPLOY_USER}:${DEPLOY_PASS} -X POST https://docker-api.vibioh.fr/containers/about/ --data-binary @docker-compose.yml
+  on:
+    branch: master
