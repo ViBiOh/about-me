@@ -13,6 +13,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -20,16 +21,27 @@ html {
 }
 
 body {
+  align-items: center;
   display: inline-flex;
-  margin: 0;
-  text-align: center;
   width: 100vw;
 }
 
 header {
   .dark;
   .padding;
-  margin: 0;
+  .flex;
+  align-content: center;
+  justify-content: center;
+}
+
+h1,
+article > h2 {
+  text-align: center;
+  width: 100%;
+}
+
+article > h2 {
+  .padding;
 }
 
 header a,
@@ -50,41 +62,66 @@ article {
   .flex;
 }
 
-article,
 section {
-  flex: 1 1 auto;
-}
-
-h1,
-h2,
-header > span {
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+  padding: 10px 0;
+  display: inline-flex;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
-@media screen and (min-width: 765px) {
-  body {
+section:nth-child(2n+1) {
+  background-color: inherit;
+}
+
+section > h2 {
+  .padding;
+  display: inline-block;
+  font-size: 5em;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ol > li {
+  .padding;
+}
+
+@media screen and (min-width: 641px) {
+  body,
+  header,
+  article {
     height: 100vh;
   }
 
-  header {
-    .flex;
-    height: 100%;
-    width: 320px;
+  article {
+    overflow: scroll;
   }
 
-  article {
-    height: 100%;
+  header > h1 {
+    width: 260px;
   }
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 640px) {
   body {
     flex-wrap: wrap;
   }
 
-  header,
-  section {
+  header {
     width: 100%;
+  }
+
+  section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section > h2 {
+    font-size: 3em;
   }
 }
 
