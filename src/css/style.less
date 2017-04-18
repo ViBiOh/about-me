@@ -7,6 +7,7 @@
 
 @dark: #3A3A3A;
 @clear: #F8F8F8;
+@img-size: 30px;
 
 @charset "UTF-8";
 
@@ -29,34 +30,52 @@ body {
 header {
   .dark;
   .padding;
-  font-weight: bold;
-  font-size: 2em;
   margin: 0;
 }
 
+object {
+  height: @img-size;
+  pointer-events: none;
+  width: @img-size;
+}
+
 article {
-  display: inline-block;
+  .flex;
   flex: 1 1 auto;
 }
 
-@media screen and (min-width: 641px) {
+h1,
+h2,
+header > span {
+  width: 100%;
+}
+
+@media screen and (min-width: 765px) {
   body {
     height: 100vh;
   }
 
   header {
-    align-items: center;
-    display: inline-flex;
-    flex-wrap: wrap;
+    .flex;
     height: 100%;
     width: 300px;
   }
+
+  article {
+    height: 100%;
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 764px) {
   header {
     width: 100%;
   }
+}
+
+.flex {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
 .dark {
