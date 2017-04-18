@@ -33,6 +33,15 @@ header {
   margin: 0;
 }
 
+header a,
+header a:hover,
+header a:visited,
+header a:active,
+header a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
 header img {
   height: @img-size;
   width: @img-size;
@@ -40,6 +49,10 @@ header img {
 
 article {
   .flex;
+}
+
+article,
+section {
   flex: 1 1 auto;
 }
 
@@ -47,11 +60,6 @@ h1,
 h2,
 header > span {
   width: 100%;
-}
-
-a, a:hover, a:visited, a:active, a:focus {
-  text-decoration: none;
-  color: inherit;
 }
 
 @media screen and (min-width: 765px) {
@@ -71,7 +79,8 @@ a, a:hover, a:visited, a:active, a:focus {
 }
 
 @media screen and (max-width: 764px) {
-  header {
+  header,
+  section {
     width: 100%;
   }
 }
