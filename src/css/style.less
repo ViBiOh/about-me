@@ -9,7 +9,7 @@
 @clear: #F8F8F8;
 @img-size: 30px;
 
-@charset "UTF-8";
+@charset 'UTF-8';
 
 * {
   box-sizing: border-box;
@@ -47,6 +47,11 @@ h1,
 h2,
 header > span {
   width: 100%;
+}
+
+a, a:hover, a:visited, a:active, a:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (min-width: 765px) {
