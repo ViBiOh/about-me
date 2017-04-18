@@ -21,7 +21,6 @@ html {
 
 body {
   display: inline-flex;
-  flex-wrap: wrap;
   margin: 0;
   text-align: center;
   width: 100vw;
@@ -79,6 +78,10 @@ header > span {
 }
 
 @media screen and (max-width: 764px) {
+  body {
+    flex-wrap: wrap;
+  }
+
   header,
   section {
     width: 100%;
