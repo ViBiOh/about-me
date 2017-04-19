@@ -28,10 +28,10 @@ body {
 }
 
 header {
-  .dark;
   .flex;
-  .padding;
   align-content: center;
+  background-color: @dark;
+  color: @clear;
   justify-content: center;
 }
 
@@ -55,10 +55,8 @@ header img {
   width: @img-size;
 }
 
-article,
-article > h2,
-ol > li {
-  .padding;
+article {
+  .flex;
 }
 
 section {
@@ -75,7 +73,6 @@ section:nth-child(2n+1) {
 }
 
 section > h2 {
-  .padding;
   display: inline-block;
   font-size: 5em;
   text-align: center;
@@ -84,6 +81,14 @@ section > h2 {
 ol {
   list-style: none;
   padding: 0;
+}
+
+header,
+article,
+article > h2,
+section > h2,
+ol > li {
+  padding: 10px;
 }
 
 @media screen and (min-width: 801px) {
@@ -134,15 +139,6 @@ ol {
   flex-wrap: wrap;
 }
 
-.dark {
-  background-color: @dark;
-  color: @clear;
-}
-
 .microdata {
   display: none;
-}
-
-.padding {
-  padding: 10px;
 }
