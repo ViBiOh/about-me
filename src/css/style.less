@@ -29,8 +29,8 @@ body {
 
 header {
   .dark;
-  .padding;
   .flex;
+  .padding;
   align-content: center;
   justify-content: center;
 }
@@ -39,10 +39,6 @@ h1,
 article > h2 {
   text-align: center;
   width: 100%;
-}
-
-article > h2 {
-  .padding;
 }
 
 header a,
@@ -59,8 +55,9 @@ header img {
   width: @img-size;
 }
 
-article {
-  .flex;
+article,
+article > h2,
+ol > li {
   .padding;
 }
 
@@ -87,10 +84,6 @@ section > h2 {
 ol {
   list-style: none;
   padding: 0;
-}
-
-ol > li {
-  .padding;
 }
 
 @media screen and (min-width: 801px) {
