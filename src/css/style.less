@@ -81,7 +81,6 @@ section > h2 {
   display: inline-block;
   font-size: 5em;
   text-align: center;
-  width: 200px;
 }
 
 ol {
@@ -93,7 +92,7 @@ ol > li {
   .padding;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 801px) {
   body,
   header,
   article {
@@ -107,9 +106,13 @@ ol > li {
   header > h1 {
     width: 260px;
   }
+  
+  section > h2 > span {
+    width: 180px;
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   body {
     flex-wrap: wrap;
   }
