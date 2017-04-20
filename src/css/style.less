@@ -9,6 +9,7 @@
 @dark: #3A3A3A;
 @clear: #F8F8F8;
 @img-size: 30px;
+@emoji-size: 150px;
 
 @charset 'UTF-8';
 
@@ -73,9 +74,14 @@ section:nth-child(2n+1) {
 }
 
 section > h2 {
-  display: inline-block;
-  font-size: 5em;
-  text-align: center;
+  .flex;
+  align-content: center;
+  justify-content: center;
+}
+
+section > h2 > img {
+  height: @emoji-size;
+  padding: 10px 50px;
 }
 
 ol {
@@ -85,7 +91,6 @@ ol {
 
 header,
 article > h2,
-section > h2,
 ol > li {
   padding: 10px;
 }
@@ -103,11 +108,6 @@ ol > li {
 
   header > h1 {
     width: 250px;
-  }
-  
-  section > h2 > span {
-    display: inline-block;
-    width: 180px;
   }
 }
 
@@ -127,8 +127,8 @@ ol > li {
     justify-content: center;
   }
 
-  section > h2 {
-    font-size: 3em;
+  section > h2 > img {
+    height: @emoji-size / 2;
   }
 }
 
