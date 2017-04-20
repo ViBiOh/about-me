@@ -1,0 +1,15 @@
+<section>
+  <h2 title="Interests">
+    <span>🚣‍</span>
+  </h2>
+  <ol>
+    {{#interests}}
+      <li>
+        <h3>{{name}}</h3>
+        {{#keywords}}
+          <span>{{.}}</span>
+        {{/keywords}}
+      </li>
+    {{/interests}}
+  </ol>
+</section>
