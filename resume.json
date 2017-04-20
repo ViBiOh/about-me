@@ -1,0 +1,120 @@
+{
+  "basics": {
+    "name": "Vincent Boutour",
+    "label": "Front-end Developer",
+    "picture": "",
+    "email": "",
+    "phone": "",
+    "website": "https://vibioh.fr",
+    "summary": "Naturally curious, discovery and learning are the essence of my daily work. I'm fond of challenges and I consider any action rewarding, success or failure. I'm autonomous, versatile, good teammate and pragmatic. Pedagogue, I taught algorithms and software engineering at IUT Paris Descartes, university of my cursus.  I have many computer skills acquired during my studies or works. The majority of these skills have been tested and implemented in a professional environment. Performance is an obsession, industrialization a passion.  Sport holds a special place in my activities and so my schedule. Many horse riding when I was younger (I'm still!), rowing, running, skiing and cycling.  I like to discover things, especially new technologies, new uses and how each element transforms our lives.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Paris",
+      "countryCode": "FR",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "ViBiOh",
+        "url": "https://github.com/ViBiOh"
+      },
+      {
+        "network": "Twitter",
+        "username": "ViBiOh",
+        "url": "https://twitter.com/ViBiOh"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Zenika",
+      "position": "IT Consultant",
+      "website": "https://zenika.com",
+      "startDate": "2015-06-01",
+      "endDate": "2017-04-30",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Université Paris Descartes",
+      "area": "Information Technology",
+      "studyType": "Master Miage",
+      "startDate": "2009-09-01",
+      "endDate": "2011-08-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Université Paris Descartes",
+      "area": "Information Technology",
+      "studyType": "Licence Miage",
+      "startDate": "2008-09-01",
+      "endDate": "2009-08-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "IUT Paris Descartes",
+      "area": "Information Technology",
+      "studyType": "DUT Informatique",
+      "startDate": "2006-09-01",
+      "endDate": "2008-08-31",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web",
+      "level": "Master",
+      "keywords": [
+        "JavaScript ⭐⭐⭐⭐⭐",
+        "React / Redux ⭐⭐⭐⭐",
+        "CSS ⭐⭐⭐⭐"
+      ]
+    },
+    {
+      "name": "Back-end",
+      "level": "",
+      "keywords": [
+        "Java ⭐⭐⭐⭐",
+        "Golang ⭐⭐⭐",
+        "COBOL ⭐⭐⭐⭐"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "fluency": "Native"
+    },
+    {
+      "language": "Anglais",
+      "fluency": "Professionnal"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sport",
+      "keywords": [
+        "Rowing ⭐⭐⭐⭐",
+        "Running race ⭐⭐"
+      ]
+    },
+    {
+      "name": "Technologies",
+      "keywords": [
+        "IoT ⭐⭐⭐",
+        "Social Media ⭐⭐"
+      ]
+    }
+  ],
+  "references": []
+}
