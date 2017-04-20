@@ -8,7 +8,7 @@
 
 @dark: #3A3A3A;
 @clear: #F8F8F8;
-@img-size: 30px;
+@img-size: 40px;
 
 @charset 'UTF-8';
 
@@ -22,13 +22,12 @@ html {
 }
 
 body {
-  align-items: center;
-  display: inline-flex;
+  .flex-no-wrap;
   width: 100vw;
 }
 
 header {
-  .flex;
+  .flex-wrap;
   align-content: center;
   background-color: @dark;
   color: @clear;
@@ -50,26 +49,19 @@ header a:focus {
   color: inherit;
 }
 
-header svg {
+header > a > svg {
   height: @img-size;
   width: @img-size;
 }
 
 article {
-  .flex;
+  .flex-wrap;
+  justify-content: center;
 }
 
 section {
-  align-items: center;
-  background-color: rgb(246, 246, 246);
-  padding: 10px 0;
-  display: inline-flex;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-
-section:nth-child(2n+1) {
-  background-color: inherit;
+  .flex-no-wrap;
+  flex: 1 1 100%;
 }
 
 section > h2 {
@@ -82,7 +74,6 @@ ol {
   padding: 0;
 }
 
-header,
 article > h2,
 ol > li {
   padding: 10px;
@@ -96,20 +87,21 @@ ol > li {
   }
 
   article {
+    flex: 1 1;
     overflow: auto;
   }
 
-  header > h1 {
-    width: 250px;
-  }
-  
-  section > ol {
-    flex: 1 1 50%;
+  section.half {
+    flex-basis: auto;
   }
 
   section > h2 {
     display: inline-block;
     width: 180px;
+  }
+
+  section > ol {
+    flex: 1 1;
   }
 }
 
@@ -126,18 +118,29 @@ ol > li {
 
   section {
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  section > h2 {
-    font-size: 3em;
   }
 }
 
-.flex {
+@media screen and (min-width: 1280px) {
+  section.half {
+    flex-basis: 50%;
+  }
+}
+
+.flex-wrap {
   align-items: center;
   display: inline-flex;
   flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+#github g {
+  fill: @clear;
 }
 
 .microdata {
