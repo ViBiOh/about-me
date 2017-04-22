@@ -3,7 +3,6 @@
   <ol>
     {{#work}}
       <li>
-        <h3>{{position}} @<a href="{{website}}" target="_blank" rel="noopener noreferrer">{{company}}</a>.</h3>
         <em>
           {{#endDate}}
             {{startDate}} - {{endDate}}
@@ -12,11 +11,20 @@
             since {{startDate}}
           {{/endDate}}
         </em>
-        {{#summary}}
-          <label class="toggle" for="{{company}}">details</label>
-          <input id="{{company}}" type="checkbox">
-          <p>{{{summary}}}</p>
-        {{/summary}}
+        <h3>
+          {{position}} @<a href="{{website}}" target="_blank" rel="noopener noreferrer">{{company}}</a>.
+        </h3>
+        <span class="work-informations">
+          {{#summary}}
+            <label class="toggle" for="{{company}}">Details</label>
+            <input id="{{company}}" type="checkbox">
+            {{#highlights}}
+              #{{.}}
+            {{/highlights}}
+            <span></span>
+            <p>{{{summary}}}</p>
+          {{/summary}}
+        </span>
       </li>
     {{/work}}
   </ol>

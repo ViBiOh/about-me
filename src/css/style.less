@@ -152,20 +152,47 @@ ol > li {
   display: none;
 }
 
+.work-informations {
+  display: inline-block;
+  margin-top: 2px;
+}
+
 label.toggle {
+  background-color: @dark;
+  border-radius: 5px;
+  color: @clear;
   cursor: pointer;
-  margin-left: 5px;
+  display: inline-block;
+  padding: 5px 10px;
 }
 
 label.toggle + input {
   display: none;
 }
 
-label.toggle + input + p {
+label.toggle + input + span {
   display: none;
 }
 
-label.toggle + input:checked + p {
+label.toggle + input + span + p {
+  display: none;
+}
+
+label.toggle + input:checked + span {
+  border-bottom: 10px solid @dark;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
   display: block;
+  height: 0;
+  margin-left: 25px;
   margin-top: 5px;
+  width: 0;
+}
+
+label.toggle + input:checked + span + p {
+  background-color: @dark;
+  border-radius: 5px;
+  color: @clear;
+  display: block;
+  padding: 10px;
 }

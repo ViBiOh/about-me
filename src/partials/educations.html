@@ -2,7 +2,10 @@
   <h2 title="Education">🎓</h2>
   <ol>
     {{#education}}
-      <li>{{studyType}} @ {{institution}}</li>
+      <li>
+        <h3>{{studyType}} @ {{institution}}</h3>
+        <p>{{area}} - <em>{{startDate}} - {{endDate}}</em><p>
+      </li>
     {{/education}}
   </ol>
 </section>
