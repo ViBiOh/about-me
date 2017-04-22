@@ -3,3 +3,6 @@ node_modules/
 **/npm-debug.log
 dist/
 tmp/
+
+# Application specific
+src/html/mustache.json
