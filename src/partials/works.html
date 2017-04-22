@@ -2,7 +2,21 @@
   <h2 title="Works">🚀</h2>
   <ol>
     {{#work}}
-      <li>{{position}} @ <a href="{{website}}" target="_blank" rel="noopener noreferrer">{{company}}</a>.
+      <li>
+        <h3>{{position}} @<a href="{{website}}" target="_blank" rel="noopener noreferrer">{{company}}</a>.</h3>
+        <em>
+          {{#endDate}}
+            {{startDate}} - {{endDate}}
+          {{/endDate}}
+          {{^endDate}}
+            since {{startDate}}
+          {{/endDate}}
+        </em>
+        {{#summary}}
+          <label class="toggle" for="{{company}}">details</label>
+          <input id="{{company}}" type="checkbox">
+          <p>{{{summary}}}</p>
+        {{/summary}}
       </li>
     {{/work}}
   </ol>

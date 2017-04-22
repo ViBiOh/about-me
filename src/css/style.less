@@ -36,6 +36,7 @@ header {
 
 h1,
 article > h2 {
+  margin: 0;
   text-align: center;
   width: 100%;
 }
@@ -149,4 +150,22 @@ ol > li {
 
 .microdata {
   display: none;
+}
+
+label.toggle {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+label.toggle + input {
+  display: none;
+}
+
+label.toggle + input + p {
+  display: none;
+}
+
+label.toggle + input:checked + p {
+  display: block;
+  margin-top: 5px;
 }
