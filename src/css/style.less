@@ -152,18 +152,26 @@ ol > li {
   display: none;
 }
 
-.work-informations {
+.informations {
   display: inline-block;
   margin-top: 2px;
 }
 
+.item,
 label.toggle {
   background-color: @dark;
   border-radius: 5px;
   color: @clear;
-  cursor: pointer;
   display: inline-block;
   padding: 5px 10px;
+}
+
+.item {
+  margin-top: 2px;
+}
+
+label.toggle {
+  cursor: pointer;
 }
 
 label.toggle + input {

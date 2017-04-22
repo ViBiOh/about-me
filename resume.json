@@ -90,42 +90,54 @@
   "awards": [],
   "publications": [],
   "skills": [{
-      "name": "Web",
-      "level": "Master",
-      "keywords": [
-        "JavaScript ⭐⭐⭐⭐⭐",
-        "React / Redux ⭐⭐⭐⭐",
-        "CSS ⭐⭐⭐⭐"
-      ]
-    }, {
-      "name": "Back-end",
-      "level": "",
-      "keywords": [
-        "Java ⭐⭐⭐⭐",
-        "Golang ⭐⭐⭐",
-        "COBOL ⭐⭐⭐⭐"
-      ]
+    "name": "Web",
+    "level": "Master",
+    "keywords": [
+      "JavaScript",
+      "React / Redux",
+      "CSS",
+      "REST"
+    ]
+  }, {
+    "name": "Back-end",
+    "level": "",
+    "keywords": [
+      "Java",
+      "Spring",
+      "Golang",
+      "COBOL",
+      "SQL"
+    ]
+  }, {
+    "name": "DevOps",
+    "level": "",
+    "keywords": [
+      "Docker",
+      "Bash",
+      "Security"
+    ]
   }],
   "languages": [{
-      "language": "Français",
-      "fluency": "Native"
-    }, {
-      "language": "Anglais",
-      "fluency": "Professionnal"
+    "language": "Français",
+    "fluency": "Native"
+  }, {
+    "language": "Anglais",
+    "fluency": "Professionnal"
   }],
   "interests": [{
-      "name": "Sport",
-      "keywords": [
-        "Rowing ⭐⭐⭐⭐",
-        "Horse-riding ⭐⭐⭐",
-        "Running ⭐⭐"
-      ]
-    }, {
-      "name": "Technologies",
-      "keywords": [
-        "IoT ⭐⭐⭐",
-        "Social Media ⭐⭐"
-      ]
+    "name": "Sport",
+    "keywords": [
+      "Rowing",
+      "Horse-riding",
+      "Bike",
+      "Running"
+    ]
+  }, {
+    "name": "Technology",
+    "keywords": [
+      "IoT",
+      "Social Media"
+    ]
   }],
   "references": []
 }
