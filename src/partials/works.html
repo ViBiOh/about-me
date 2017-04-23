@@ -3,21 +3,20 @@
   <ol>
     {{#work}}
       <li>
-        <em>
-          {{#endDate}}
-            {{startDate}} - {{endDate}}
-          {{/endDate}}
-          {{^endDate}}
-            since {{startDate}}
-          {{/endDate}}
-        </em>
         <h3>
           {{position}} @<a href="{{website}}" target="_blank" rel="noopener noreferrer">{{company}}</a>.
         </h3>
         <span class="informations">
           {{#summary}}
-            <label class="toggle" for="{{company}}">Details</label>
-            <input id="{{company}}" name="{{company}}" type="checkbox">
+            <label class="toggle" for="{{company}}">
+              {{#endDate}}
+                {{startDate}} - {{endDate}}
+              {{/endDate}}
+              {{^endDate}}
+                since {{startDate}}
+              {{/endDate}}
+            </label>
+            <input id="{{company}}" type="checkbox">
             {{#highlights}}
               #{{.}}
             {{/highlights}}
