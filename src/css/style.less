@@ -9,6 +9,7 @@
 @dark: #3A3A3A;
 @clear: #F8F8F8;
 @img-size: 40px;
+@emoji-size: 100px;
 
 @charset 'UTF-8';
 
@@ -71,8 +72,11 @@ section {
 }
 
 section > h2 {
-  font-size: 5em;
   text-align: center;
+}
+
+section > h2 > svg {
+  height: @emoji-size;
 }
 
 ol {
@@ -124,6 +128,10 @@ ol > li {
   ol,
   section > h2 {
     width: 100%;
+  }
+
+  h2 {
+    padding: 10px;
   }
 
   section {
