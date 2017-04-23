@@ -42,8 +42,8 @@
       "website": "https://zenika.com",
       "startDate": "2015-06",
       "endDate": "2017-04",
-      "summary": "",
-      "highlights": ["java", "javascript", "react", "agile", "mongo", "docker"]
+      "summary": "Development of a work planning application on <strong>RATP</strong> metro, RER and tram networks. Displaying generated SVG from Neo4j graph database data in ReactJS. Back-end in Java Play.<br><br>Development and maintenance of an internal CRM tool at <strong>Exane BNP Paribas</strong>. Improved stability of the CTI application for traders on financial markets and derivatives. Realization of a full-text search tool in Javascript.<br><br>Maintenance and development of the Chassagne repository at <strong>Générix Group</strong>. Context of EDI between trading partners. Implementation of Rancher to allow the QA team to deploy environments at their convenience.<br><br>Implementation of a software factory entirely under Docker with continuous deployment.",
+      "highlights": ["java", "javascript", "react", "agile", "mongo", "docker", "rancher"]
   }, {
       "company": "Oodrive",
       "position": "R&D Software engineer",
@@ -58,7 +58,7 @@
       "website": "http://www.euraxiel.fr",
       "startDate": "2008-04",
       "endDate": "2014-03",
-      "summary": "Installation of Recital and 'Dictionnaire de Données' products to various clients. Adaptation to the characteristics of each environment for the realization of the middleware between the frontend, in HTML & Java, and Cobol business backend. Performance management and maintainability on a transactionnal environment.<br><br>Performance audit of a Java application and application patch during the implementation phase. Reliability and routing control of a customer migration at BNP Paribas. Management of volumetry. Transverse vision and technological choices (Office, Java and Mainframe) to meet the need.<br><br>Modeling, analysis and U.M.L. designing of a staff management application at BNP Paribas. Design for both a Java w/ Oracle and Cobol w/ DB2 targets.<br><br>Working on an electronic banking litigation management application in Partecis, on PACBASE mainframe environment and international electronic banking compensations, VISA and MasterCard.",
+      "summary": "Installation of Recital and 'Dictionnaire de Données' products to various clients. Adaptation to the characteristics of each environment for the realization of the middleware between the frontend, in HTML & Java, and Cobol business backend. Performance management and maintainability on a transactionnal environment.<br><br>Performance audit of a Java application and application patch during the implementation phase. Reliability and routing control of a customer migration at BNP Paribas. Management of volumetry. Transverse vision and technological choices (Office, Java and Mainframe) to meet the need.<br><br>Modeling, analysis and U.M.L. designing of a staff management application at <strong>BNP Paribas</strong>. Design for both a Java w/ Oracle and Cobol w/ DB2 targets.<br><br>Working on an electronic banking litigation management application in <strong>Partecis</strong>, on PACBASE mainframe environment and international electronic banking compensations, VISA and MasterCard.",
       "highlights": ["COBOL", "Pacbase", "Mainframe", "VBA"]
   }],
   "volunteer": [],

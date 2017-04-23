@@ -15,6 +15,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  color: @dark;
 }
 
 html {
@@ -30,7 +31,6 @@ header {
   .flex-wrap;
   align-content: center;
   background-color: @dark;
-  color: @clear;
   justify-content: center;
 }
 
@@ -39,6 +39,11 @@ article > h2 {
   margin: 0;
   text-align: center;
   width: 100%;
+}
+
+h1,
+strong {
+  color: @clear;
 }
 
 header a,
@@ -159,18 +164,19 @@ ol > li {
 
 .item,
 label.toggle {
-  background-color: @dark;
   border-radius: 5px;
-  color: @clear;
   display: inline-block;
   padding: 5px 10px;
 }
 
 .item {
+  border: 1px solid @dark;
   margin-top: 2px;
 }
 
 label.toggle {
+  background-color: @dark;
+  color: @clear;
   cursor: pointer;
 }
 
