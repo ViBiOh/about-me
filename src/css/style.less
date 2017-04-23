@@ -86,7 +86,7 @@ ol {
 
 article > h2,
 ol > li {
-  padding: 10px;
+  padding: 5px;
 }
 
 @media screen and (min-width: 801px) {
@@ -124,14 +124,14 @@ ol > li {
     flex-wrap: wrap;
   }
 
+  header {
+    padding: 10px;
+  }
+
   header,
   ol,
   section > h2 {
     width: 100%;
-  }
-
-  h2 {
-    padding: 10px;
   }
 
   section {
@@ -161,10 +161,6 @@ ol > li {
   fill: @clear;
 }
 
-.microdata {
-  display: none;
-}
-
 .informations {
   display: inline-block;
   margin-top: 2px;
@@ -188,14 +184,9 @@ label.toggle {
   cursor: pointer;
 }
 
-label.toggle + input {
-  display: none;
-}
-
-label.toggle + input + span {
-  display: none;
-}
-
+.microdata,
+label.toggle + input,
+label.toggle + input + span,
 label.toggle + input + span + p {
   display: none;
 }
