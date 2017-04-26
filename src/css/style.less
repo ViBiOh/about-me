@@ -145,6 +145,16 @@ ol > li {
   }
 }
 
+@media print {
+  body:after {
+    content: 'Save ink, share link.';
+  }
+
+  body > * {
+    display: none;
+  }
+}
+
 .flex-wrap {
   align-items: center;
   display: inline-flex;
