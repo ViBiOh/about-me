@@ -6,8 +6,8 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-@dark: #3A3A3A;
-@clear: #F8F8F8;
+@dark: #3a3a3a;
+@clear: #f8f8f8;
 @img-size: 40px;
 @emoji-size: 100px;
 
@@ -25,11 +25,13 @@ html {
 
 body {
   .flex-no-wrap;
+
   width: 100vw;
 }
 
 header {
   .flex-wrap;
+
   align-content: center;
   background-color: @dark;
   justify-content: center;
@@ -63,11 +65,13 @@ header > a > svg {
 
 article {
   .flex-wrap;
+
   justify-content: center;
 }
 
 section {
   .flex-no-wrap;
+
   flex: 1 1 100%;
 }
 
@@ -146,7 +150,7 @@ ol > li {
 }
 
 @media print {
-  body:after {
+  body::after {
     content: 'Save ink, share link.';
   }
 
@@ -155,13 +159,13 @@ ol > li {
   }
 }
 
-.flex-wrap {
+.flex-wrap {
   align-items: center;
   display: inline-flex;
   flex-wrap: wrap;
 }
 
-.flex-no-wrap {
+.flex-no-wrap {
   align-items: center;
   display: inline-flex;
   flex-wrap: nowrap;
