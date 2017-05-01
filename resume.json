@@ -37,6 +37,14 @@
       "summary": "Teaching assistant for courses Introduction to Algorithms and Programming (IAP), Data Structure and Algorithms (SDA) and Software Engineering Methods. Courses taught in 1st year degree and Licence Miage.",
       "highlights": []
   }, {
+      "company": "MeilleursAgents.com",
+      "position": "Front End Developer",
+      "website": "https://meilleursagents.com",
+      "startDate": "2017-05",
+      "endDate": "",
+      "summary": "Front-end development",
+      "highlights": ["javascript", "react"]
+  }, {
       "company": "Zenika",
       "position": "IT Consultant",
       "website": "https://zenika.com",
