@@ -6,7 +6,6 @@ const utils = require('js-utils');
 const UTF_8 = 'utf-8';
 
 const promiseReadFile = utils.asyncifyCallback(fs.readFile);
-const promiseWriteFile = utils.asyncifyCallback(fs.writeFile);
 
 function displaySuccess(output) {
   console.log(output);
