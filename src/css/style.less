@@ -21,11 +21,13 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
 }
 
 body {
   .flex-no-wrap;
 
+  font-size: 1.6rem;
   width: 100vw;
 }
 
@@ -90,10 +92,10 @@ ol {
 
 article > h2,
 ol > li {
-  padding: 5px;
+  padding: 0.5rem;
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 80.1rem) {
   body,
   header,
   article {
@@ -115,7 +117,7 @@ ol > li {
 
   section > h2 {
     display: inline-block;
-    width: 180px;
+    width: 18rem;
   }
 
   section > ol {
@@ -123,13 +125,13 @@ ol > li {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 80rem) {
   body {
     flex-wrap: wrap;
   }
 
   header {
-    padding: 10px;
+    padding: 1rem;
   }
 
   header,
@@ -143,7 +145,7 @@ ol > li {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 128rem) {
   section {
     flex-basis: 50%;
   }
@@ -177,19 +179,19 @@ ol > li {
 
 .informations {
   display: inline-block;
-  margin-top: 2px;
+  margin-top: 0.2rem;
 }
 
 .item,
 label.toggle {
-  border-radius: 2px;
+  border-radius: 0.2rem;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
 }
 
 .item {
-  border: 1px solid @dark;
-  margin-top: 2px;
+  border: 0.1rem solid @dark;
+  margin-top: 0.2rem;
 }
 
 label.toggle {
@@ -197,7 +199,7 @@ label.toggle {
   color: @clear;
   cursor: pointer;
   text-align: center;
-  width: 150px;
+  width: 15rem;
 }
 
 .microdata,
@@ -208,20 +210,20 @@ label.toggle + input + span + p {
 }
 
 label.toggle + input:checked + span {
-  border-bottom: 10px solid @dark;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  border-bottom: 1rem solid @dark;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
   display: block;
   height: 0;
-  margin-left: 65px;
-  margin-top: 5px;
+  margin-left: 6.5rem;
+  margin-top: 0.5rem;
   width: 0;
 }
 
 label.toggle + input:checked + span + p {
   background-color: @dark;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   color: @clear;
   display: block;
-  padding: 10px;
+  padding: 1rem;
 }
