@@ -126,6 +126,12 @@ ol > li {
 }
 
 @media screen and (max-width: 80rem) {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
   body {
     flex-wrap: wrap;
   }
@@ -138,6 +144,11 @@ ol > li {
   ol,
   section > h2 {
     width: 100%;
+  }
+
+  article {
+    height: calc(100% - 10rem);
+    overflow: auto;
   }
 
   section {
