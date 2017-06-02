@@ -26,7 +26,8 @@ deploy:
     condition: ${TRAVIS_BRANCH} == 'master'
 - provider: script
   skip_cleanup: true
-  script: cat docker-compose.yml | sed "s|vibioh.fr|www-${TRAVIS_BRANCH}.vibioh.fr|"
+  script: >-
+    cat docker-compose.yml | sed "s|traefik.frontend.rule.*|traefik.frontend.rule: Host: 'www-${TRAVIS_BRANCH}.vibioh.fr'|"
   on:
     all_branches: true
     condition: ${TRAVIS_BRANCH} != 'master'
