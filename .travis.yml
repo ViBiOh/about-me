@@ -27,7 +27,7 @@ deploy:
 - provider: script
   skip_cleanup: true
   script: |
-    cat docker-compose.yml | sed "s|traefik.frontend.rule.*|traefik.frontend.rule: 'Host: www-${TRAVIS_BRANCH}.vibioh.fr'|" | sed "s|${DOCKER_IMAGE_DEFAULT}|${DOCKER_IMAGE_NAME}|"
+    cat docker-compose.yml | sed "s|traefik.frontend.rule.*|traefik.frontend.rule: 'Host: www-${TRAVIS_BRANCH}.vibioh.fr'|"
   on:
     all_branches: true
     condition: ${TRAVIS_BRANCH} != 'master'
