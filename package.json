@@ -39,5 +39,12 @@
     "stylelint": "latest",
     "stylelint-config-standard": "latest"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "selector-list-comma-newline-after": null,
+      "declaration-colon-newline-after": null
+    }
+  }
 }

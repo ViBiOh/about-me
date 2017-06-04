@@ -2,8 +2,20 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  src: local('Roboto'),
+    local('Roboto-Regular'),
+    url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF,
+    U+0131,
+    U+0152-0153,
+    U+02C6,
+    U+02DA,
+    U+02DC,
+    U+2000-206F,
+    U+2074,
+    U+20AC,
+    U+2212,
+    U+2215;
 }
 
 @dark: #3a3a3a;
@@ -39,23 +51,17 @@ header {
   justify-content: center;
 }
 
-h1,
-article > h2 {
+h1, article > h2 {
   margin: 0;
   text-align: center;
   width: 100%;
 }
 
-h1,
-strong {
+h1, strong {
   color: @clear;
 }
 
-header a,
-header a:hover,
-header a:visited,
-header a:active,
-header a:focus {
+header a, header a:hover, header a:visited, header a:active, header a:focus {
   text-decoration: none;
   color: inherit;
 }
@@ -90,15 +96,12 @@ ol {
   padding: 0;
 }
 
-article > h2,
-li {
+article > h2, li {
   padding: 0.5rem;
 }
 
 @media screen and (min-width: 80.1rem) {
-  body,
-  header,
-  article {
+  body, header, article {
     height: 100vh;
   }
 
@@ -134,9 +137,7 @@ li {
     padding: 1rem;
   }
 
-  header,
-  ol,
-  section > h2 {
+  header, ol, section > h2 {
     width: 100%;
   }
 
@@ -153,7 +154,7 @@ li {
 
 @media print {
   body::after {
-    content: 'Save ink, share link.';
+    content: 'Save ink,share link.';
   }
 
   body > * {
@@ -182,8 +183,7 @@ li {
   margin-top: 0.2rem;
 }
 
-.item,
-label.toggle {
+.item, label.toggle {
   border-radius: 0.2rem;
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -202,10 +202,7 @@ label.toggle {
   width: 15rem;
 }
 
-.microdata,
-label.toggle + input,
-label.toggle + input + span,
-label.toggle + input + span + p {
+.microdata, label.toggle + input, label.toggle + input + span, label.toggle + input + span + p {
   display: none;
 }
 
