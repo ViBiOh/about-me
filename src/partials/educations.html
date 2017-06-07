@@ -2,8 +2,8 @@
   <h2 title="Education">{{> twemoji_man_student.html}}</h2>
   <ol>
     {{#education}}
-      <li>
-        <h3>{{studyType}}, {{institution}}</h3>
+      <li itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+        <h3><span itemprop="description">{{studyType}}</span>, <span itemprop="name">{{institution}}</span></h3>
         <p>{{area}} - <em>{{startDate}} - {{endDate}}</em><p>
       </li>
     {{/education}}

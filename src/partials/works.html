@@ -2,9 +2,11 @@
   <h2 title="Works">{{> twemoji_rocket.html}}</h2>
   <ol>
     {{#work}}
-      <li>
+      <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
         <h3>
-          {{position}} @<a href="{{website}}" target="_blank" rel="noopener noreferrer">{{company}}</a>.
+          {{position}} @<a href="{{website}}" target="_blank" rel="noopener noreferrer">
+            <span itemprop="name">{{company}}</span>
+          </a>.
         </h3>
         <span class="informations">
           {{#summary}}
@@ -21,7 +23,7 @@
               #{{.}}
             {{/highlights}}
             <span></span>
-            <p>{{{summary}}}</p>
+            <p itemprop="description">{{{summary}}}</p>
           {{/summary}}
         </span>
       </li>
