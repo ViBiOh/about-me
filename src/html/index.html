@@ -1,15 +1,18 @@
 {{> top.html}}
 <header>
-  <h1>{{basics.name}}</h1>
-  <a id="github" href="https://github.com/ViBiOh" target="_blank" rel="noopener noreferrer">
-    {{> github_logo.html}}
-  </a>
-  <a href="https://twitter.com/ViBiOh" target="_blank" rel="noopener noreferrer">
-    {{> twitter_logo.html}}
-  </a>
+  <img src="/img/avatar.jpg" alt="image" itemprop="image" />
+  <div class="title">
+    <h1 itemprop="name">{{basics.name}}</h1>
+    <a id="github" href="https://github.com/ViBiOh" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
+      {{> github_logo.html}}
+    </a>
+    <a href="https://twitter.com/ViBiOh" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
+      {{> twitter_logo.html}}
+    </a>
+  </div>
 </header>
 <article>
-  <h2>{{basics.label}}</h2>
+  <h2 itemprop="jobTitle">{{basics.label}}</h2>
   {{> works.html}}
   {{> skills.html}}
   {{> educations.html}}

@@ -49,9 +49,16 @@ header {
   align-content: center;
   background-color: @dark;
   justify-content: center;
+  width: 30rem;
 }
 
-h1, article > h2 {
+header img {
+  border-radius: 50%;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+
+h1, article h2 {
   margin: 0;
   text-align: center;
   width: 100%;
@@ -61,12 +68,16 @@ h1, strong {
   color: @clear;
 }
 
-header a, header a:hover, header a:visited, header a:active, header a:focus {
+.title {
+  text-align: center;
+}
+
+.title a, .title a:hover, .title a:visited, .title a:active, .title a:focus {
   text-decoration: none;
   color: inherit;
 }
 
-header > a > svg {
+.title a > svg {
   height: @img-size;
   width: @img-size;
 }
@@ -135,6 +146,10 @@ article > h2, li {
 
   header {
     padding: 1rem;
+  }
+
+  header img {
+    display: none;
   }
 
   header, ol, section > h2 {
