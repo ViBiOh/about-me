@@ -73,10 +73,18 @@ section {
   .flex-no-wrap;
 
   flex: 1 1 100%;
+  margin: 2rem 0;
 }
 
 section > h2 {
-  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem black;
+  display: flex;
+  height: 18rem;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 18rem;
 }
 
 section > h2 > svg {
@@ -111,8 +119,7 @@ article > h2, li {
   }
 
   section > h2 {
-    display: inline-block;
-    width: 18rem;
+    margin: 2rem;
   }
 
   section > ol {
@@ -133,16 +140,12 @@ article > h2, li {
     display: none;
   }
 
-  header, ol, section > h2 {
+  header, ol {
     width: 100%;
   }
 
   section {
     flex-wrap: wrap;
-  }
-
-  section > h2 {
-    margin: 2rem 0;
   }
 }
 
