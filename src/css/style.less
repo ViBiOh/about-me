@@ -1,7 +1,8 @@
 @dark: #3a3a3a;
 @clear: #f8f8f8;
-@img-size: 40px;
-@emoji-size: 100px;
+@img-size: 4rem;
+@emoji-size: 10rem;
+@label-size: 20rem;
 
 @charset 'UTF-8';
 
@@ -199,15 +200,26 @@ article > h2, li {
 }
 
 label.toggle {
+  align-items: center;
+  display: flex;
   background-color: @dark;
   color: @clear;
   cursor: pointer;
-  text-align: center;
-  width: 20rem;
+  justify-content: space-between;
+  width: @label-size;
 }
 
 .microdata, label.toggle + input, label.toggle + input + span, label.toggle + input + span + p {
   display: none;
+}
+
+label.toggle > span {
+  border-top: 1rem solid @clear;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  display: inline-block;
+  height: 0;
+  width: 0;
 }
 
 label.toggle + input:checked + span {
@@ -216,7 +228,7 @@ label.toggle + input:checked + span {
   border-right: 1rem solid transparent;
   display: block;
   height: 0;
-  margin-left: 9.5rem;
+  margin-left: (@label-size - 1rem) / 2;
   margin-top: 0.5rem;
   width: 0;
 }
