@@ -52,9 +52,25 @@ h1, strong {
 }
 
 article > h2 {
-  background-color: #5cb85c;
+  animation: BackgroundColor 30s ease infinite;
+  background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+  background-size: 400% 400%;
   color: @clear;
   padding: 3rem;
+}
+
+@keyframes BackgroundColor { 
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .title {
