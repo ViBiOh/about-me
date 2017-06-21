@@ -6,6 +6,8 @@ services:
     command:
     - -csp
     - default-src 'self'; script-src 'self' 'unsafe-inline' www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' www.google-analytics.com
+    - -report-uri
+    - https://vibioh.report-uri.io/r/default/ct/reportOnly
     labels:
       traefik.backend.healthcheck.path: '/health'
       traefik.frontend.passHostHeader: 'true'
