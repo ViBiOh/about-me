@@ -4,6 +4,7 @@ services:
   site:
     image: vibioh/about
     command:
+    - -redirectAdd
     - -csp
     - default-src 'self'; script-src 'self' 'unsafe-inline' www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' www.google-analytics.com
     labels:
