@@ -4,8 +4,8 @@ services:
   site:
     image: vibioh/about
     command:
-    - -prometheusMetricsRemoteHost
-    - ^cv:1080$$
+    - -prometheusMetricsHost
+    - cv:1080
     - -csp
     - default-src 'self'; script-src 'self' 'unsafe-inline' www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' www.google-analytics.com
     labels:
