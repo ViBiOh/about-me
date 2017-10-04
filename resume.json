@@ -48,7 +48,7 @@
       "website": "https://meilleursagents.com",
       "startDate": "2017-05",
       "endDate": "",
-      "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Spreading of knowledge sharing between tech teams and functional testing culture.",
+      "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Spreading of knowledge sharing between tech teams and functional testing culture.",
       "highlights": [
         "javascript",
         "react"
