@@ -141,19 +141,18 @@
       "keywords": [
         "JavaScript",
         "React / Redux",
-        "CSS",
-        "REST"
+        "CSS"
       ]
     },
     {
       "name": "Back-end",
       "level": "",
       "keywords": [
-        "Java",
-        "Spring",
         "Golang",
         "COBOL",
-        "SQL"
+        "SQL",
+        "Java",
+        "Spring"
       ]
     },
     {
@@ -182,15 +181,22 @@
       "keywords": [
         "Rowing",
         "Horse-riding",
-        "Bike",
-        "Running"
+        "Biking",
+        "Skiing"
       ]
     },
     {
       "name": "Technology",
       "keywords": [
         "IoT",
-        "Social Media"
+        "Pieces of Machinery"
+      ]
+    },
+    {
+      "name": "Guts",
+      "keywords": [
+        "Epicurism",
+        "Pun"
       ]
     }
   ],
