@@ -1,3 +1,3 @@
-FROM vibioh/viws:arm
+FROM vibioh/viws
 
 COPY dist/ /www/
