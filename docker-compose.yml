@@ -6,6 +6,8 @@ services:
     command:
     - -csp
     - default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self'
+    - -headers
+    - X-UA-Compatible:IE=edge,chrome=1~content-language:fr
     labels:
       traefik.frontend.passHostHeader: 'true'
       traefik.frontend.rule: 'Host: vibioh.fr, www.vibioh.fr'
