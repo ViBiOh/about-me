@@ -6,11 +6,9 @@ node_js: 8
 script: |
   npm run build
   docker build -t ${DOCKER_USER}/about .
-  docker build -t ${DOCKER_USER}/about:arm -f Dockerfile_arm .
 after_success: |
   docker login -u ${DOCKER_USER} -p ${DOCKER_PASS} \
-  && docker push ${DOCKER_USER}/about \
-  && docker push ${DOCKER_USER}/about:arm
+  && docker push ${DOCKER_USER}/about
 notifications:
   email: false
 deploy:
