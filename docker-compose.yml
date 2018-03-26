@@ -8,8 +8,6 @@ services:
     - default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'
     - -headers
     - X-UA-Compatible:IE=edge,chrome=1~content-language:fr
-    - -push
-    - /img/avatar-150.jpg
     labels:
       traefik.frontend.passHostHeader: 'true'
       traefik.frontend.rule: 'Host: vibioh.fr, www.vibioh.fr'
