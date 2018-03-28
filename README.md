@@ -5,3 +5,11 @@
 ## Emoji
 
 Emojis are extract from [Twemoji](https://github.com/twitter/twemoji), under MIT License.
+
+
+## Development
+
+```
+go get -u github.com/ViBiOh/viws
+npm start
+```
