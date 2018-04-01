@@ -10,6 +10,6 @@ Emojis are extract from [Twemoji](https://github.com/twitter/twemoji), under MIT
 ## Development
 
 ```
-go get -u github.com/ViBiOh/viws
+go get -u github.com/ViBiOh/viws/cmd
 npm start
 ```
