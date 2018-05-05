@@ -12,7 +12,7 @@ services:
     - about
     labels:
       traefik.frontend.passHostHeader: 'true'
-      traefik.frontend.rule: 'Host: vibioh.fr
+      traefik.frontend.rule: 'Host: vibioh.fr'
       traefik.protocol: 'https'
       traefik.port: '1080'
       traefik.frontend.rateLimit.extractorFunc: 'client.ip'
@@ -32,7 +32,7 @@ services:
     security_opt:
     - no-new-privileges
 
-  site_datadogless:
+  datadogless:
     image: vibioh/about
     command:
     - -csp
