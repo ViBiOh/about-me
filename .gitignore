@@ -3,7 +3,6 @@ node_modules/
 **/npm-debug.log
 dist/
 tmp/
-package-lock.json
 
 # Application specific
 src/html/mustache.json
