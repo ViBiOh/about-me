@@ -1,15 +1,19 @@
-@dark: #3a3a3a;
-@clear: #f8f8f8;
-@img-size: 4rem;
-@emoji-size: 10rem;
-@label-size: 20rem;
+:root {
+  --dark: #3a3a3a;
+  --clear: #f8f8f8;
+  --img-size: 4rem;
+  --emoji-size: 10rem;
+  --label-size: 20rem;
+}
 
 @charset 'UTF-8';
+
+@import url('https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css');
 
 * {
   box-sizing: border-box;
   margin: 0;
-  color: @dark;
+  color: var(--dark);
 }
 
 html {
@@ -18,17 +22,13 @@ html {
 }
 
 body {
-  .flex-no-wrap;
-
   font-size: 1.6rem;
   width: 100vw;
 }
 
 header {
-  .flex-wrap;
-
   align-content: center;
-  background-color: @dark;
+  background-color: var(--dark);
   justify-content: center;
   overflow: auto;
   width: 30rem;
@@ -48,14 +48,14 @@ h1, article h2 {
 }
 
 h1, strong {
-  color: @clear;
+  color: var(--clear);
 }
 
 article > h2 {
   animation: BackgroundColor 30s ease infinite;
   background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
   background-size: 400% 400%;
-  color: @clear;
+  color: var(--clear);
   padding: 3rem;
 }
 
@@ -83,20 +83,16 @@ article > h2 {
 }
 
 .title a > svg {
-  height: @img-size;
-  width: @img-size;
+  height: var(--img-size);
+  width: var(--img-size);
 }
 
 article {
-  .flex-wrap;
-
   align-items: flex-start;
   justify-content: center;
 }
 
 section {
-  .flex-no-wrap;
-
   flex: 1 1 100%;
   margin: 2rem 0;
 }
@@ -113,7 +109,7 @@ section > h2 {
 }
 
 section > h2 > svg {
-  height: @emoji-size;
+  height: var(--emoji-size);
 }
 
 ol {
@@ -207,7 +203,7 @@ li {
 }
 
 #github g {
-  fill: @clear;
+  fill: var(--clear);
 }
 
 .informations {
@@ -222,18 +218,18 @@ li {
 }
 
 .item {
-  border: 0.1rem solid @dark;
+  border: 0.1rem solid var(--dark);
   margin-top: 0.2rem;
 }
 
 label.toggle {
   align-items: center;
   display: flex;
-  background-color: @dark;
-  color: @clear;
+  background-color: var(--dark);
+  color: var(--clear);
   cursor: pointer;
   justify-content: space-between;
-  width: @label-size;
+  width: var(--label-size);
 }
 
 .microdata, label.toggle + input, label.toggle + input + span, label.toggle + input + span + p {
@@ -241,7 +237,7 @@ label.toggle {
 }
 
 label.toggle > span {
-  border-top: 1rem solid @clear;
+  border-top: 1rem solid var(--clear);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   display: inline-block;
@@ -250,24 +246,24 @@ label.toggle > span {
 }
 
 label.toggle + input:checked + span {
-  border-bottom: 1rem solid @dark;
+  border-bottom: 1rem solid var(--dark);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   display: block;
   height: 0;
-  margin-left: (@label-size - 1rem) / 2;
+  margin-left: calc((var(--label-size) - 1rem) / 2);
   margin-top: 0.5rem;
   width: 0;
 }
 
 label.toggle + input:checked + span + p {
-  background-color: @dark;
+  background-color: var(--dark);
   border-radius: 0.2rem;
-  color: @clear;
+  color: var(--clear);
   display: block;
   padding: 1rem;
+}
 
-  a {
-    color: @clear;
-  }
+label.toggle + input:checked + span + p a {
+  color: var(--clear);
 }
