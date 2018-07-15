@@ -21,37 +21,45 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.body {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: nowrap;
   font-size: 1.6rem;
   width: 100vw;
 }
 
-header {
+.header {
   align-content: center;
+  align-items: center;
   background-color: var(--dark);
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   overflow: auto;
   width: 30rem;
 }
 
-header img {
+.header img {
   border-radius: 50%;
   box-shadow: 0 0 1rem white;
   height: 15rem;
   margin-bottom: 2rem;
 }
 
-h1, article h2 {
+h1,
+.article h2 {
   margin: 0;
   text-align: center;
   width: 100%;
 }
 
-h1, strong {
+h1,
+strong {
   color: var(--clear);
 }
 
-article > h2 {
+.article > h2 {
   animation: BackgroundColor 30s ease infinite;
   background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
   background-size: 400% 400%;
@@ -87,17 +95,17 @@ article > h2 {
   width: var(--img-size);
 }
 
-article {
+.article {
   align-items: flex-start;
   justify-content: center;
 }
 
-section {
+.section {
   flex: 1 1 100%;
   margin: 2rem 0;
 }
 
-section > h2 {
+.section > h2 {
   align-items: center;
   border-radius: 50%;
   box-shadow: 0 0 1rem black;
@@ -108,7 +116,7 @@ section > h2 {
   width: 15rem;
 }
 
-section > h2 > svg {
+.section > h2 > svg {
   height: var(--emoji-size);
 }
 
@@ -119,75 +127,6 @@ ol {
 
 li {
   padding: 0.5rem;
-}
-
-@media screen and (min-width: 801px) {
-  body, header, article {
-    height: 100vh;
-  }
-
-  article {
-    flex: 1 1;
-    overflow: auto;
-  }
-
-  section {
-    flex-basis: auto;
-  }
-
-  section.full {
-    flex-basis: 100%;
-  }
-
-  section > h2 {
-    margin: 2rem;
-  }
-
-  section > ol {
-    flex: 1 1;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    flex-wrap: wrap;
-  }
-
-  header {
-    padding: 1rem;
-  }
-
-  header img {
-    display: none;
-  }
-
-  header, ol {
-    width: 100%;
-  }
-
-  article > h2 {
-    padding: 1rem;
-  }
-
-  section {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  section {
-    flex-basis: 50%;
-  }
-}
-
-@media print {
-  body::after {
-    content: 'Save ink,share link. https://vibioh.fr';
-  }
-
-  body > * {
-    display: none;
-  }
 }
 
 .flex-wrap {
@@ -232,7 +171,10 @@ label.toggle {
   width: var(--label-size);
 }
 
-.microdata, label.toggle + input, label.toggle + input + span, label.toggle + input + span + p {
+.microdata,
+label.toggle + input,
+label.toggle + input + span,
+label.toggle + input + span + p {
   display: none;
 }
 
@@ -266,4 +208,75 @@ label.toggle + input:checked + span + p {
 
 label.toggle + input:checked + span + p a {
   color: var(--clear);
+}
+
+@media screen and (min-width: 801px) {
+  .body,
+  .header,
+  .article {
+    height: 100vh;
+  }
+
+  .article {
+    flex: 1 1;
+    overflow: auto;
+  }
+
+  .section {
+    flex-basis: auto;
+  }
+
+  .section.full {
+    flex-basis: 100%;
+  }
+
+  .section > h2 {
+    margin: 2rem;
+  }
+
+  .section > ol {
+    flex: 1 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .body {
+    flex-wrap: wrap;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  .header img {
+    display: none;
+  }
+
+  .header, ol {
+    width: 100%;
+  }
+
+  .article > h2 {
+    padding: 1rem;
+  }
+
+  .section {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    flex-basis: 50%;
+  }
+}
+
+@media print {
+  .body::after {
+    content: 'Save ink,share link. https://vibioh.fr';
+  }
+
+  .body > * {
+    display: none;
+  }
 }
