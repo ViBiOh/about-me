@@ -1,3 +1,7 @@
+@charset 'UTF-8';
+
+@import url('https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css');
+
 :root {
   --dark: #3a3a3a;
   --clear: #f8f8f8;
@@ -5,10 +9,6 @@
   --emoji-size: 10rem;
   --label-size: 20rem;
 }
-
-@charset 'UTF-8';
-
-@import url('https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css');
 
 * {
   box-sizing: border-box;
@@ -273,7 +273,7 @@ label.toggle + input:checked + span + p a {
 
 @media print {
   .body::after {
-    content: 'Save ink,share link. https://vibioh.fr';
+    content: 'Save ink, share link. Save paper, use browser. https://vibioh.fr';
   }
 
   .body > * {
