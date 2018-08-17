@@ -9,11 +9,11 @@ jobs:
     node_js: 10
     script: |
       npm run build && \
-      docker build -t ${DOCKER_USER}/about .
+      docker build -t vibioh/about .
     after_success: |
       if [ "${TRAVIS_BRANCH}" == "master" ]; then
-        echo ${DOCKER_PASS} | docker login -u ${DOCKER_USER} --password-stdin && \
-        docker push ${DOCKER_USER}/about
+        echo ${DOCKER_PASS} | docker login -u vibioh --password-stdin && \
+        docker push vibioh/about
       fi
 
   - stage: Deploy
