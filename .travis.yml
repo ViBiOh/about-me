@@ -2,19 +2,24 @@ jobs:
   include:
   - stage: Build
 
-    language: node_js
     sudo: required
     services:
     - docker
-    node_js: 10
-    script: |
-      npm run build && \
-      docker build -t vibioh/about .
+    script: docker build -t vibioh/about:${TRAVIS_COMMIT} .
     after_success: |
-      if [ "${TRAVIS_BRANCH}" == "master" ]; then
-        echo ${DOCKER_PASS} | docker login -u vibioh --password-stdin && \
-        docker push vibioh/about
-      fi
+      echo ${DOCKER_PASS} | docker login -u vibioh --password-stdin && \
+      docker push vibioh/about:${TRAVIS_COMMIT}
+
+  - stage: Publish
+
+    sudo: required
+    services:
+    - docker
+    script: |
+      echo ${DOCKER_PASS} | docker login -u vibioh --password-stdin
+      docker pull vibioh/about:${TRAVIS_COMMIT}
+      docker tag vibioh/about:${TRAVIS_COMMIT} vibioh/about:latest
+      docker push vibioh/about:latest
 
   - stage: Deploy
 
@@ -26,6 +31,8 @@ jobs:
 
 stages:
   - Build
+  - name: Publish
+    if: branch = master
   - name: Deploy
     if: branch = master
 
