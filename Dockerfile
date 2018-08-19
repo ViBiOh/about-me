@@ -6,7 +6,7 @@ ENV WORKDIR /usr/src/app
 WORKDIR ${WORKDIR}
 COPY ./ ${WORKDIR}/
 
-RUN npm install \
+RUN npm ci \
  && npm run build \
  && mkdir -p /app \
  && cp -r dist/ /app/
