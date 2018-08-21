@@ -101,7 +101,8 @@ strong {
 }
 
 .section {
-  flex: 1 1 100%;
+  flex: 1 1;
+  flex-basis: 100%;
   margin: 2rem 0;
 }
 
@@ -228,6 +229,7 @@ label.toggle + input:checked + span + p a {
 
   .section.full {
     flex-basis: 100%;
+    width: 100%;
   }
 
   .section > h2 {
@@ -268,6 +270,7 @@ label.toggle + input:checked + span + p a {
 @media screen and (min-width: 1280px) {
   .section {
     flex-basis: 50%;
+    width: 50%;
   }
 }
 
