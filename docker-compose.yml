@@ -5,7 +5,7 @@ services:
     image: vibioh/about
     command:
     - -csp
-    - default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net/npm/normalize.css@8.0.0/
+    - default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline' fathom.vibioh.fr; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net/npm/normalize.css@8.0.0/
     - -headers
     - X-UA-Compatible:ie=edge~content-language:fr
     - -tracingName
