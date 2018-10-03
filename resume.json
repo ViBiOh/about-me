@@ -21,11 +21,6 @@
         "url": "https://github.com/ViBiOh"
       },
       {
-        "network": "Twitter",
-        "username": "ViBiOh",
-        "url": "https://twitter.com/ViBiOh"
-      },
-      {
         "network": "Medium",
         "username": "vibioh",
         "url": "https://medium.com/@vibioh"
@@ -49,11 +44,11 @@
     },
     {
       "company": "MeilleursAgents.com",
-      "position": "Front End Developer",
+      "position": "Front End Developer, then Lead Developer",
       "website": "https://meilleursagents.com",
       "startDate": "2017-05",
       "endDate": "",
-      "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Migrating real estate estimate form from HTML/PHP to React-Redux-Saga architecture with better modularity and Google Analytics tracking. Spreading of knowledge sharing between tech teams and functional testing culture.",
+      "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Migrating real estate estimate form from HTML/PHP to React-Redux-Saga architecture with better modularity and Google Analytics tracking. Launching brand new product for realtors allowing to browse past sales. Releasing and contributing to our <a href=\"https://www.npmjs.com/package/react-mapbox-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">open source Mapbox wrapper</a>. Spreading of knowledge sharing between tech teams and functional testing culture.",
       "highlights": [
         "javascript",
         "react"
