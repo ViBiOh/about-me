@@ -33,12 +33,12 @@
   },
   "homepage": "https://github.com/ViBiOh/about-me",
   "devDependencies": {
-    "clean-css-cli": "latest",
-    "html-minifier": "latest",
-    "js-index-builder": "ViBiOh/js-index-builder",
-    "js-utils": "ViBiOh/js-utils",
-    "stylelint": "latest",
-    "stylelint-config-standard": "latest"
+    "clean-css-cli": "4.2.1",
+    "html-minifier": "3.5.21",
+    "js-index-builder": "github:ViBiOh/js-index-builder",
+    "js-utils": "github:ViBiOh/js-utils",
+    "stylelint": "9.10.1",
+    "stylelint-config-standard": "18.2.0"
   },
   "dependencies": {},
   "stylelint": {
