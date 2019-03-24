@@ -35,7 +35,7 @@
     "clean-css-cli": "4.2.1",
     "html-minifier": "3.5.21",
     "js-index-builder": "github:ViBiOh/js-index-builder#master",
-    "js-utils": "github:ViBiOh/js-utils",
+    "js-utils": "github:ViBiOh/js-utils#master",
     "stylelint": "9.10.1",
     "stylelint-config-standard": "18.2.0"
   },
