@@ -27,7 +27,7 @@ jobs:
     deploy:
       provider: script
       skip_cleanup: true
-      script: 'curl -H "Authorization: GitHub ${GITHUB_OAUTH_TOKEN}" -X POST https://dashboard-api.vibioh.fr/deploy/about/ --data-binary @docker-compose.yml'
+      script: 'curl -X POST -u "${DEPLOY_CREDENTIALS}" "https://deploy.vibioh.fr/?project=about&version=${TRAVIS_COMMIT}" --data-binary @docker-compose.yml'
 
 stages:
   - Build
