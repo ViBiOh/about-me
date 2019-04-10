@@ -7,8 +7,8 @@ jobs:
     - docker
     script: docker build -t vibioh/about:${TRAVIS_COMMIT} .
     after_success: |
-      echo ${DOCKER_PASS} | docker login -u vibioh --password-stdin && \
-      docker push vibioh/about:${TRAVIS_COMMIT}
+      echo "${DOCKER_PASS}" | docker login -u vibioh --password-stdin && \
+      docker push "vibioh/about:${TRAVIS_COMMIT}"
 
   - stage: Publish
 
@@ -16,9 +16,9 @@ jobs:
     services:
     - docker
     script: |
-      echo ${DOCKER_PASS} | docker login -u vibioh --password-stdin
-      docker pull vibioh/about:${TRAVIS_COMMIT}
-      docker tag vibioh/about:${TRAVIS_COMMIT} vibioh/about:latest
+      echo "${DOCKER_PASS}" | docker login -u vibioh --password-stdin
+      docker pull "vibioh/about:${TRAVIS_COMMIT}"
+      docker tag "vibioh/about:${TRAVIS_COMMIT}" vibioh/about:latest
       docker push vibioh/about:latest
 
   - stage: Deploy
@@ -27,7 +27,7 @@ jobs:
     deploy:
       provider: script
       skip_cleanup: true
-      script: 'curl -X POST -u "${DEPLOY_CREDENTIALS}" "https://deploy.vibioh.fr/about/${TRAVIS_COMMIT}" --data-binary @docker-compose.yml'
+      script: bash script/deploy "https://deploy.vibioh.fr/about/${TRAVIS_COMMIT}" "@docker-compose.yml"
 
 stages:
   - Build
