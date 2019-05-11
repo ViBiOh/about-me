@@ -12,4 +12,6 @@ RUN npm ci \
 
 FROM vibioh/viws
 
+ARG VERSION
+ENV VERSION=${VERSION}
 COPY --from=builder /app/dist/ /www/
