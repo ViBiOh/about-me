@@ -7,7 +7,7 @@ jobs:
     - docker
     script: docker build --build-arg "VERSION=${TRAVIS_COMMIT}" -t vibioh/about:${TRAVIS_COMMIT} .
     after_success:
-    - echo "${DOCKER_PASS}" | docker login -u vibioh --password-stdin && \
+    - echo "${DOCKER_PASS}" | docker login -u vibioh --password-stdin
     - docker push "vibioh/about:${TRAVIS_COMMIT}"
 
   - stage: Publish
