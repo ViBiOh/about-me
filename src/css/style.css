@@ -96,20 +96,28 @@ strong {
 }
 
 .article {
-  align-items: flex-start;
+  align-items: stretch;
+  display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .section {
+  align-items: center;
+  background-color: white;
+  display: inline-flex;
   flex: 1 1;
   flex-basis: 100%;
-  margin: 2rem 0;
+  flex-wrap: nowrap;
+  padding: 2rem 0;
+}
+
+.section:nth-child(2n+0) {
+  background-color: whitesmoke;
 }
 
 .section > h2 {
   align-items: center;
-  border-radius: 50%;
-  box-shadow: 0 0 1rem black;
   display: flex;
   height: 15rem;
   justify-content: center;
@@ -128,18 +136,6 @@ ol {
 
 li {
   padding: 0.5rem;
-}
-
-.flex-wrap {
-  align-items: center;
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
-.flex-no-wrap {
-  align-items: center;
-  display: inline-flex;
-  flex-wrap: nowrap;
 }
 
 #github g {
