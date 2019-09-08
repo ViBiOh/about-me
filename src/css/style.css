@@ -64,7 +64,6 @@ strong {
   background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
   background-size: 400% 400%;
   color: var(--clear);
-  height: calc(3rem * 2 + 2.4rem);
   padding: 3rem;
 }
 
@@ -94,13 +93,6 @@ strong {
 .title a > svg {
   height: var(--img-size);
   width: var(--img-size);
-}
-
-.article {
-  align-items: stretch;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .section {
