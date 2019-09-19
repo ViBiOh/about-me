@@ -9,6 +9,18 @@ services:
     - -headers
     - X-UA-Compatible:ie=edge~content-language:fr
     labels:
+      traefik.http.routers.about-http.rule: Host(`vibioh.fr`) || Host(`www.vibioh.fr`)
+      traefik.http.routers.about-http.entrypoints: http
+      traefik.http.routers.about-http.middlewares: redirect@file
+      traefik.http.routers.about-https.rule: Host(`vibioh.fr`) || Host(`www.vibioh.fr`)
+      traefik.http.routers.about-https.entrypoints: https
+      traefik.http.routers.about-https.middlewares: compress@file
+      traefik.http.routers.about-https.tls: true
+      traefik.http.routers.about-https.tls.certResolver: default
+      traefik.http.services.about-service.loadbalancer.passhostheader: true
+      traefik.http.services.about-service.loadbalancer.server.port: '1080'
+      traefik.http.middlewares.about-rate-limit.ratelimit.average: '10'
+      traefik.http.middlewares.about-rate-limit.ratelimit.burst: '50'
       traefik.frontend.passHostHeader: 'true'
       traefik.frontend.rule: 'Host: vibioh.fr, www.vibioh.fr'
       traefik.protocol: 'http'
