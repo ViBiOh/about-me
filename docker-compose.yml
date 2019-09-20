@@ -11,7 +11,7 @@ services:
       traefik.http.routers.about-https.entrypoints: https
       traefik.http.routers.about-https.middlewares: compress@file, web-limit@file
       traefik.http.routers.about-https.tls: true
-      traefik.http.routers.about-https.tls.certResolver: default
+      traefik.http.routers.about-https.tls.certresolver: default
       traefik.http.services.about-service.loadbalancer.passhostheader: true
       traefik.http.services.about-service.loadbalancer.server.port: '1080'
     environment:
