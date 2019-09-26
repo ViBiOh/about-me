@@ -12,7 +12,7 @@ services:
       traefik.http.middlewares.about-wwwredirect.redirectregex.permanent: true
       traefik.http.routers.about-https.rule: Host(`vibioh.fr`) || Host(`www.vibioh.fr`)
       traefik.http.routers.about-https.entrypoints: https
-      traefik.http.routers.about-https.middlewares: compress@file, web-limit@file
+      traefik.http.routers.about-https.middlewares: compress@file, web-limit@file, about-wwwredirect
       traefik.http.routers.about-https.tls: true
       traefik.http.routers.about-https.tls.certresolver: default
       traefik.http.services.about-service.loadbalancer.server.port: '1080'
