@@ -1,13 +1,13 @@
 {
   "title": "Vincent Boutour",
   "description": "Curriculum Vitae Vincent Boutour - Developer JavaScript / Golang - Forever COBOL fan - 😍 Docker",
-  "url": "https://www.vibioh.fr",
-  "img": "https://www.vibioh.fr/android-chrome-512x512.png",
+  "url": "https://vibioh.fr",
+  "img": "https://vibioh.fr/android-chrome-512x512.png",
   "imgHeight": 512,
   "imgWidth": 512,
   "breadcrumb": [
     {
-      "url": "https://www.vibioh.fr/",
+      "url": "https://vibioh.fr/",
       "name": "Resume",
       "position": 1
     }
