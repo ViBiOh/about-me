@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 
 services:
   site:
@@ -15,7 +15,7 @@ services:
       traefik.http.routers.about-https.middlewares: compress@file, web-limit@file, about-wwwredirect
       traefik.http.routers.about-https.tls: true
       traefik.http.routers.about-https.tls.certresolver: default
-      traefik.http.services.about-service.loadbalancer.server.port: '1080'
+      traefik.http.services.about-service.loadbalancer.server.port: "1080"
     environment:
       VIWS_CSP: default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net/npm/normalize.css@8.0.0/
       VIWS_HEADERS: X-UA-Compatible:ie=edge~content-language:fr
