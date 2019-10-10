@@ -51,7 +51,10 @@
       "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Migrating real estate estimate form from HTML/PHP to React-Redux-Saga architecture with better modularity and Google Analytics tracking. Launching brand new product for realtors allowing to browse past sales. Releasing and contributing to our <a href=\"https://www.npmjs.com/package/react-mapbox-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">open source React Mapbox wrapper</a>. Spreading of knowledge sharing between tech teams and <a href=\"https://talks.vibioh.fr/indus_e2e/\" target=\"_blank\" rel=\"noopener noreferrer\">functional testing culture</a>.",
       "highlights": [
         "javascript",
-        "react"
+        "react",
+        "terraform",
+        "ansible",
+        "golang"
       ]
     },
     {
