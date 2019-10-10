@@ -36,7 +36,7 @@
     "html-minifier": "4.0.0",
     "js-index-builder": "github:ViBiOh/js-index-builder#master",
     "js-utils": "github:ViBiOh/js-utils#master",
-    "stylelint": "11.0.0",
+    "stylelint": "11.1.1",
     "stylelint-config-standard": "19.0.0"
   },
   "dependencies": {},
