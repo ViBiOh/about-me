@@ -27,7 +27,9 @@ jobs:
     deploy:
       provider: script
       skip_cleanup: true
-      script: bash script/deploy about "@docker-compose.yml"
+      script: |
+        curl -q -sSL "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "deploy"
+        bash scripts/deploy about "@docker-compose.yml"
 
 stages:
   - Build

@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const utils = require('js-utils');
-
 const UTF_8 = 'utf-8';
 
 const promiseReadFile = utils.asyncifyCallback(fs.readFile);
@@ -17,6 +16,7 @@ function displayError(error) {
   } else {
     console.error(error);
   }
+
   process.exit(1);
 }
 
