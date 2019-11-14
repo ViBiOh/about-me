@@ -29,6 +29,8 @@ jobs:
       skip_cleanup: true
       script: |
         curl -q -sSL "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "deploy"
+        tree
+        cat scripts/deploy
         bash scripts/deploy about "@docker-compose.yml"
 
 stages:
