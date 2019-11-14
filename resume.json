@@ -161,8 +161,9 @@
       "name": "DevOps",
       "level": "",
       "keywords": [
-        "Ansible",
         "Terraform",
+        "Ansible",
+        "Kubernetes",
         "Bash"
       ]
     }
