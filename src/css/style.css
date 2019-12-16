@@ -151,9 +151,14 @@ li {
   margin-top: 0.2rem;
 }
 
+.tags {
+  display: block;
+  margin-top: 0.2rem;
+}
+
 label.toggle {
   align-items: center;
-  display: flex;
+  display: inline-flex;
   background-color: var(--dark);
   color: var(--clear);
   cursor: pointer;
@@ -163,8 +168,7 @@ label.toggle {
 
 .microdata,
 label.toggle + input,
-label.toggle + input + span,
-label.toggle + input + span + p {
+label.toggle + input + p {
   display: none;
 }
 
@@ -177,26 +181,16 @@ label.toggle > span {
   width: 0;
 }
 
-label.toggle + input:checked + span {
-  border-bottom: 1rem solid var(--dark);
-  border-left: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-  display: block;
-  height: 0;
-  margin-left: calc((var(--label-size) - 1rem) / 2);
-  margin-top: 0.5rem;
-  width: 0;
-}
-
-label.toggle + input:checked + span + p {
+label.toggle + input:checked + p {
   background-color: var(--dark);
   border-radius: 0.2rem;
   color: var(--clear);
   display: block;
+  margin-top: 0.5rem;
   padding: 1rem;
 }
 
-label.toggle + input:checked + span + p a {
+label.toggle + input:checked + p a {
   color: var(--clear);
 }
 
