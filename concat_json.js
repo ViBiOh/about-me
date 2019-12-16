@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const utils = require('js-utils');
+const crypto = require('crypto');
 const resumeSchema = require('resume-schema');
 const dateFns = require('date-fns');
 
@@ -23,6 +24,18 @@ function displayError(error) {
   process.exit(1);
 }
 
+function computeHashes(payload) {
+  payload.work.forEach(work => {
+    work.id = `w${crypto
+      .createHash('sha256')
+      .update(work.company)
+      .digest('hex')
+      .substring(0, 10)}`;
+  });
+
+  return payload;
+}
+
 function formatDates(payload) {
   payload.work.forEach(work => {
     if (work.startDate) {
@@ -31,9 +44,7 @@ function formatDates(payload) {
         const endDate = work.endDate ? new Date(work.endDate) : new Date();
 
         work.startDate = dateFns.format(startDate, 'LLL yyyy');
-        work.endDate = work.endDate
-          ? dateFns.format(endDate, 'LLL yyyy')
-          : work.endDate;
+        work.endDate = work.endDate ? dateFns.format(endDate, 'LLL yyyy') : work.endDate;
         work.duration = dateFns.formatDistance(startDate, endDate);
       } catch (e) {
         console.error(e);
@@ -62,6 +73,7 @@ new Promise((resolve, reject) => {
       return files;
     })
     .then(files => files.reduce((p, c) => Object.assign(p, c), {}))
+    .then(computeHashes)
     .then(formatDates)
     .then(payload => resolve(JSON.stringify(payload, null, 2)))
     .catch(reject);

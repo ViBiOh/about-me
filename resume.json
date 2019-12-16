@@ -1,16 +1,13 @@
 {
   "basics": {
     "name": "Vincent Boutour",
-    "label": "Developer",
+    "label": "Factotum Developer",
     "picture": "https://vibioh.fr/img/avatar.jpg",
     "website": "https://vibioh.fr",
     "summary": "Naturally curious, discovery and learning are the essence of my daily work. I'm fond of challenges and I consider any action rewarding, success or failure. I'm autonomous, versatile, good teammate and pragmatic. Pedagogue, I taught algorithms and software engineering at IUT Paris Descartes, university of my cursus.  I have many computer skills acquired during my studies or works. The majority of these skills have been tested and implemented in a professional environment. Performance is an obsession, industrialization a passion.  Sport holds a special place in my activities and so my schedule. Many horse riding when I was younger (I'm still!), rowing, running, skiing and cycling.  I like to discover things, especially new technologies, new uses and how each element transforms our lives.",
     "location": {
-      "address": "",
-      "postalCode": "",
       "city": "Paris",
-      "countryCode": "FR",
-      "region": ""
+      "countryCode": "FR"
     },
     "profiles": [
       {

@@ -1,3 +1,4 @@
+
 <section id="work" class="section full">
   <h2 title="Works">{{> twemoji_rocket.html}}</h2>
   <ol>
@@ -15,7 +16,7 @@
 
         <span class="informations">
           {{#summary}}
-            <label class="toggle" for="{{company}}">
+            <label class="toggle" for="{{id}}" tabindex="0" onkeydown="toggleKeyboard(event)">
               {{#endDate}}
                 {{startDate}} - {{endDate}}
               {{/endDate}}
@@ -27,7 +28,7 @@
             {{#duration}}
               ({{duration}})
             {{/duration}}
-            <input id="{{company}}" type="checkbox">
+            <input id="{{id}}" type="checkbox" tabindex="-1">
             <p itemprop="description">{{{summary}}}</p>
           {{/summary}}
         </span>
