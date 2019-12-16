@@ -4,7 +4,6 @@ const fs = require('fs');
 const utils = require('js-utils');
 const resumeSchema = require('resume-schema');
 const dateFns = require('date-fns');
-const dateFnsLocale = require('date-fns/locale');
 
 const UTF_8 = 'utf-8';
 
@@ -24,14 +23,18 @@ function displayError(error) {
   process.exit(1);
 }
 
-function computeDates(payload) {
+function formatDates(payload) {
   payload.work.forEach(work => {
     if (work.startDate) {
       try {
         const startDate = new Date(work.startDate);
         const endDate = work.endDate ? new Date(work.endDate) : new Date();
 
-        work.duration = dateFns.formatDistance(startDate, endDate, { locale: dateFnsLocale.fr });
+        work.startDate = dateFns.format(startDate, 'LLL yyyy');
+        work.endDate = work.endDate
+          ? dateFns.format(endDate, 'LLL yyyy')
+          : work.endDate;
+        work.duration = dateFns.formatDistance(startDate, endDate);
       } catch (e) {
         console.error(e);
       }
@@ -59,7 +62,7 @@ new Promise((resolve, reject) => {
       return files;
     })
     .then(files => files.reduce((p, c) => Object.assign(p, c), {}))
-    .then(computeDates)
+    .then(formatDates)
     .then(payload => resolve(JSON.stringify(payload, null, 2)))
     .catch(reject);
 })
