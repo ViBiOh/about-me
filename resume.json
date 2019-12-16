@@ -3,8 +3,6 @@
     "name": "Vincent Boutour",
     "label": "Developer",
     "picture": "https://vibioh.fr/img/avatar.jpg",
-    "email": "",
-    "phone": "",
     "website": "https://vibioh.fr",
     "summary": "Naturally curious, discovery and learning are the essence of my daily work. I'm fond of challenges and I consider any action rewarding, success or failure. I'm autonomous, versatile, good teammate and pragmatic. Pedagogue, I taught algorithms and software engineering at IUT Paris Descartes, university of my cursus.  I have many computer skills acquired during my studies or works. The majority of these skills have been tested and implemented in a professional environment. Performance is an obsession, industrialization a passion.  Sport holds a special place in my activities and so my schedule. Many horse riding when I was younger (I'm still!), rowing, running, skiing and cycling.  I like to discover things, especially new technologies, new uses and how each element transforms our lives.",
     "location": {
@@ -37,17 +35,15 @@
       "company": "Université Paris Descartes",
       "position": "Enseignant vacataire",
       "website": "http://www.iut.parisdescartes.fr",
-      "startDate": "2013-09",
-      "endDate": "",
+      "startDate": "2013-09-01",
       "summary": "Teaching assistant for courses Introduction to Algorithms and Programming (IAP), Data Structure and Algorithms (SDA) and Software Engineering Methods. Courses taught in 1st year degree and Licence Miage.",
       "highlights": []
     },
     {
       "company": "MeilleursAgents.com",
       "position": "Front End Developer & Lead Developer then Productivity Engineer",
-      "website": "https://meilleursagents.com",
-      "startDate": "2017-05",
-      "endDate": "",
+      "website": "https://www.meilleursagents.com",
+      "startDate": "2017-05-02",
       "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Migrating real estate estimate form from HTML/PHP to React-Redux-Saga architecture with better modularity and Google Analytics tracking. Launching brand new product for realtors allowing to browse past sales. Releasing and contributing to our <a href=\"https://www.npmjs.com/package/react-mapbox-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">open source React Mapbox wrapper</a>. Spreading of knowledge sharing between tech teams and <a href=\"https://talks.vibioh.fr/indus_e2e/\" target=\"_blank\" rel=\"noopener noreferrer\">functional testing culture</a>.",
       "highlights": [
         "javascript",
@@ -61,8 +57,8 @@
       "company": "Zenika",
       "position": "IT Consultant",
       "website": "https://zenika.com",
-      "startDate": "2015-06",
-      "endDate": "2017-04",
+      "startDate": "2015-06-01",
+      "endDate": "2017-04-30",
       "summary": "Development of a work planning application on <strong>RATP</strong> metro, RER and tram networks. Displaying generated SVG from Neo4j graph database data in ReactJS. Back-end in Java Play. Realization of an email template Rich Text Editor with DraftJS and Mustache.<br><br>Development and maintenance of an internal CRM tool at <strong>Exane BNP Paribas</strong>. Improved stability of the CTI application for traders on financial markets and derivatives. Realization of a full-text search tool in Javascript.<br><br>Maintenance and development of the Chassagne repository at <strong>Générix Group</strong>. Context of EDI between trading partners. Implementation of Rancher to allow the QA team to deploy environments at their convenience.<br><br>Implementation of a software factory entirely under Docker with continuous deployment.",
       "highlights": [
         "java",
@@ -77,9 +73,9 @@
     {
       "company": "Oodrive",
       "position": "R&D Software engineer",
-      "website": "https://oodrive.fr",
-      "startDate": "2014-04",
-      "endDate": "2015-05",
+      "website": "https://www.oodrive.fr",
+      "startDate": "2014-04-01",
+      "endDate": "2015-05-31",
       "summary": "Maintenance and development of Omnikles products (dematerialization) and CertEurope (digital certificate), two companies of Oodrive's group. Improving main Oodrive's product : Easyshare. Handling websockets communication in a clustered environment and improving API for mobile apps. Developing tools for Q&A team in NodeJS.",
       "highlights": [
         "java",
@@ -93,9 +89,9 @@
     {
       "company": "Euraxiel",
       "position": "Software engineer",
-      "website": "http://www.euraxiel.fr",
-      "startDate": "2008-04",
-      "endDate": "2014-03",
+      "website": "https://www.euraxiel.fr",
+      "startDate": "2008-04-01",
+      "endDate": "2014-03-31",
       "summary": "Installation of Recital and 'Dictionnaire de Données' products to various clients. Adaptation to the characteristics of each environment for the realization of the middleware between the frontend, in HTML & Java, and Cobol business backend. Performance management and maintainability on a transactionnal environment.<br><br>Performance audit of a Java application and application patch during the implementation phase. Reliability and routing control of a customer migration at BNP Paribas. Management of volumetry. Transverse vision and technological choices (Office, Java and Mainframe) to meet the need.<br><br>Modeling, analysis and U.M.L. designing of a staff management application at <strong>BNP Paribas</strong>. Design for both a Java w/ Oracle and Cobol w/ DB2 targets.<br><br>Working on an electronic banking litigation management application in <strong>Partecis</strong>, on PACBASE mainframe environment and international electronic banking compensations, VISA and MasterCard.",
       "highlights": [
         "COBOL",
@@ -111,8 +107,8 @@
       "institution": "Université Paris Descartes",
       "area": "Information Technology",
       "studyType": "Master Miage",
-      "startDate": "2009",
-      "endDate": "2011",
+      "startDate": "2009-09-01",
+      "endDate": "2011-08-31",
       "gpa": "",
       "courses": []
     },
@@ -120,8 +116,8 @@
       "institution": "Université Paris Descartes",
       "area": "Information Technology",
       "studyType": "Licence Miage",
-      "startDate": "2008",
-      "endDate": "2009",
+      "startDate": "2008-09-01",
+      "endDate": "2009-08-31",
       "gpa": "",
       "courses": []
     },
@@ -129,8 +125,8 @@
       "institution": "IUT Paris Descartes",
       "area": "Information Technology",
       "studyType": "DUT Informatique",
-      "startDate": "2006",
-      "endDate": "2008",
+      "startDate": "2006-09-01",
+      "endDate": "2008-08-31",
       "gpa": "",
       "courses": []
     }
