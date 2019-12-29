@@ -9,10 +9,10 @@ jobs:
       services:
         - docker
       script:
-        - docker build --build-arg "APP_VERSION=${TRAVIS_COMMIT}" -t "${DOCKER_USER}/about:${TRAVIS_COMMIT}" .
+        - docker build --build-arg "APP_VERSION=${TRAVIS_COMMIT:0:8}" -t "${DOCKER_USER}/about:${TRAVIS_COMMIT:0:8}" .
       after_success:
         - echo "${DOCKER_PASS}" | docker login -u "${DOCKER_USER}" --password-stdin
-        - docker push "${DOCKER_USER}/about:${TRAVIS_COMMIT}"
+        - docker push "${DOCKER_USER}/about:${TRAVIS_COMMIT:0:8}"
 
     - stage: Publish
 
@@ -23,7 +23,7 @@ jobs:
       script:
         - echo "${DOCKER_PASS}" | docker login -u "${DOCKER_USER}" --password-stdin
         - curl -q -sSL --max-time 10 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "docker_promote"
-        - scripts/docker_promote "${DOCKER_USER}/about" "${TRAVIS_COMMIT}"
+        - scripts/docker_promote "${DOCKER_USER}/about" "${TRAVIS_COMMIT:0:8}"
 
     - stage: Deploy
 
