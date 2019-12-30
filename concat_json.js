@@ -6,9 +6,7 @@ const crypto = require('crypto');
 const resumeSchema = require('resume-schema');
 const dateFns = require('date-fns');
 
-const UTF_8 = 'utf-8';
-
-const promiseReadFile = utils.asyncifyCallback(fs.readFile);
+const readUTF8 = file => utils.asyncifyCallback(fs.readFile)(file, 'utf-8');
 
 function displaySuccess(output) {
   console.log(output);
@@ -32,8 +30,6 @@ function computeHashes(payload) {
       .digest('hex')
       .substring(0, 10)}`;
   });
-
-  return payload;
 }
 
 function formatDates(payload) {
@@ -51,8 +47,6 @@ function formatDates(payload) {
       }
     }
   });
-
-  return payload;
 }
 
 function validateSchema(payload) {
@@ -61,22 +55,21 @@ function validateSchema(payload) {
       console.error('The resume is invalid:', err);
     }
   });
-
-  return payload;
 }
 
-new Promise((resolve, reject) => {
-  Promise.all(process.argv.slice(2).map(json => promiseReadFile(json, UTF_8)))
-    .then(content => content.map(c => JSON.parse(c)))
-    .then(files => {
-      validateSchema(files[0]);
-      return files;
-    })
-    .then(files => files.reduce((p, c) => Object.assign(p, c), {}))
-    .then(computeHashes)
-    .then(formatDates)
-    .then(payload => resolve(JSON.stringify(payload, null, 2)))
-    .catch(reject);
-})
-  .then(displaySuccess)
-  .catch(displayError);
+(async () => {
+  try {
+    const content = await Promise.all(process.argv.slice(2).map(readUTF8));
+
+    const jsonContent = content.map(c => JSON.parse(c));
+    validateSchema(jsonContent[0]);
+
+    const data = jsonContent.reduce((p, c) => Object.assign(p, c), {});
+    computeHashes(data);
+    formatDates(data);
+
+    displaySuccess(JSON.stringify(data, null, 2)d);
+  } catch (e) {
+    displayError(e);
+  }
+})();
