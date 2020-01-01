@@ -4,7 +4,7 @@ version: "2"
 
 services:
   site:
-    image: vibioh/about
+    image: ${DOCKER_USER}/about
     labels:
       traefik.http.routers.about-http.rule: Host(`vibioh.fr`) || Host(`www.vibioh.fr`)
       traefik.http.routers.about-http.entrypoints: http
