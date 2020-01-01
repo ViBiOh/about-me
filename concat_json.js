@@ -68,7 +68,7 @@ function validateSchema(payload) {
     computeHashes(data);
     formatDates(data);
 
-    displaySuccess(JSON.stringify(data, null, 2)d);
+    displaySuccess(JSON.stringify(data, null, 2));
   } catch (e) {
     displayError(e);
   }
