@@ -8,9 +8,9 @@ services:
     labels:
       traefik.http.routers.about-http.rule: Host(`vibioh.fr`) || Host(`www.vibioh.fr`)
       traefik.http.routers.about-http.entrypoints: http
-      traefik.http.routers.about-http.middlewares: redirect@file, about-wwwredirect
+      traefik.http.routers.about-http.middlewares: redirect@file
       traefik.http.middlewares.about-wwwredirect.redirectregex.regex: ^https?://www.vibioh.fr(.*)
-      traefik.http.middlewares.about-wwwredirect.redirectregex.replacement: https://vibioh.fr$${1}
+      traefik.http.middlewares.about-wwwredirect.redirectregex.replacement: https://vibioh.fr${1}
       traefik.http.middlewares.about-wwwredirect.redirectregex.permanent: true
       traefik.http.routers.about-https.rule: Host(`vibioh.fr`) || Host(`www.vibioh.fr`)
       traefik.http.routers.about-https.entrypoints: https
