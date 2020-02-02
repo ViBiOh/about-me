@@ -4,7 +4,7 @@
     "label": "Factotum Developer",
     "picture": "https://vibioh.fr/img/avatar.jpg",
     "website": "https://vibioh.fr",
-    "summary": "Naturally curious, discovery and learning are the essence of my daily work. I'm fond of challenges and I consider any action rewarding, success or failure. I'm autonomous, versatile, good teammate and pragmatic. Pedagogue, I taught algorithms and software engineering at IUT Paris Descartes, university of my cursus.  I have many computer skills acquired during my studies or works. The majority of these skills have been tested and implemented in a professional environment. Performance is an obsession, industrialization a passion.  Sport holds a special place in my activities and so my schedule. Many horse riding when I was younger (I'm still!), rowing, running, skiing and cycling.  I like to discover things, especially new technologies, new uses and how each element transforms our lives.",
+    "summary": "Naturally curious, discovery and learning are the essence of my daily work. I'm fond of challenges and I'm not afraid to fail. I'm autonomous, versatile, good teammate and pragmatic. Pedagogue, I taught algorithms and software engineering at IUT Paris Descartes, university of my cursus. I have many computer skills acquired during my studies or works. The majority of these skills have been tested and implemented in a professional environment. Performance is an obsession, industrialization a passion. Sport holds a special place in my schedule. Horse riding when I was younger, rowing, skiing and daily cycling for commuting.",
     "location": {
       "city": "Paris",
       "countryCode": "FR"
@@ -41,11 +41,12 @@
       "position": "Front End Developer & Lead Developer then Productivity Engineer",
       "website": "https://www.meilleursagents.com",
       "startDate": "2017-05-02",
-      "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Migrating real estate estimate form from HTML/PHP to React-Redux-Saga architecture with better modularity and Google Analytics tracking. Launching brand new product for realtors allowing to browse past sales. Releasing and contributing to our <a href=\"https://www.npmjs.com/package/react-mapbox-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">open source React Mapbox wrapper</a>. Spreading of knowledge sharing between tech teams and <a href=\"https://talks.vibioh.fr/indus_e2e/\" target=\"_blank\" rel=\"noopener noreferrer\">functional testing culture</a>.",
+      "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Migrating real estate estimate form from HTML/PHP to React-Redux-Saga architecture with better modularity. Launching brand new product for realtors allowing to browse past sales. Releasing and contributing to our <a href=\"https://www.npmjs.com/package/react-mapbox-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">open source React Mapbox wrapper</a>. Spreading of knowledge sharing between tech teams and <a href=\"https://talks.vibioh.fr/indus_e2e/\" target=\"_blank\" rel=\"noopener noreferrer\">functional testing culture</a>.<br><br>Improving productivity of engineering teams by writing and/or adding new tools, spreading new code conventions in a growing team, speeding up continuous integration, onboarding new members.",
       "highlights": [
         "javascript",
         "react",
         "terraform",
+        "Kubernetes",
         "ansible",
         "golang"
       ]
@@ -154,10 +155,10 @@
       "name": "DevOps",
       "level": "",
       "keywords": [
+        "Bash",
         "Terraform",
         "Ansible",
-        "Kubernetes",
-        "Bash"
+        "Kubernetes"
       ]
     }
   ],
