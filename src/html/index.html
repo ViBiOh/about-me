@@ -1,7 +1,8 @@
 {{> top.html}}
 <header class="header">
-  <img src="/img/avatar-150.jpg" alt="{{basics.name}}" itemprop="image" />
-  <div class="title">
+  <img class="avatar" src="/img/avatar-150.jpg" alt="{{basics.name}}" itemprop="image" />
+
+  <div>
     <h1 itemprop="name">{{basics.name}}</h1>
     <a id="github" aria-label="Github of ViBiOh" href="https://github.com/ViBiOh" target="_blank" rel="noopener noreferrer" itemprop="sameAs">
       {{> github_logo.html}}
@@ -11,12 +12,17 @@
     </a>
   </div>
 </header>
-<article class="article">
-  <h2 itemprop="jobTitle">{{basics.label}}</h2>
+
+<article class="article flex-grow">
+  <h2 itemprop="jobTitle" class="job-title">{{basics.label}}</h2>
   {{> works.html}}
-  {{> skills.html}}
-  {{> educations.html}}
-  {{> experiments.html}}
-  {{> interests.html}}
+
+  <div class="grid">
+    {{> skills.html}}
+    {{> educations.html}}
+    {{> experiments.html}}
+    {{> interests.html}}
+  </div>
 </article>
+
 {{> bottom.html}}
