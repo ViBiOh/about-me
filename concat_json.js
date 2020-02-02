@@ -47,6 +47,20 @@ function formatDates(payload) {
       }
     }
   });
+
+  payload.education.forEach(education => {
+    if (education.startDate) {
+      try {
+        const startDate = new Date(education.startDate);
+        const endDate = education.endDate ? new Date(education.endDate) : new Date();
+
+        education.startDate = dateFns.format(startDate, 'LLL yyyy');
+        education.endDate = education.endDate ? dateFns.format(endDate, 'LLL yyyy') : education.endDate;
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  });
 }
 
 function validateSchema(payload) {
