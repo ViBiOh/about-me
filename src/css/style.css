@@ -45,6 +45,10 @@ li {
   padding: 0.5rem;
 }
 
+strong {
+  color: var(--clear);
+}
+
 .body {
   font-size: 1.6rem;
   height: 100vh;
