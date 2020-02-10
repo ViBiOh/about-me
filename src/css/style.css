@@ -50,6 +50,7 @@ strong {
 }
 
 .body {
+  -webkit-overflow-scrolling: touch;
   font-size: 1.6rem;
   height: 100vh;
   width: 100vw;
