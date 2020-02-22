@@ -20,7 +20,7 @@ jobs:
         - git diff -- *.go && git diff --quiet -- *.go
         - curl -q -sSL --max-time 10 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "release"
         - echo "${DOCKER_PASS}" | docker login -u "${DOCKER_USER}" --password-stdin
-        - DOCKER_IMAGE="${DOCKER_USER}/about" IMAGE_VERSION="${TRAVIS_COMMIT:0:8}" ./scripts/release build docker
+        - DOCKER_IMAGE="${DOCKER_USER}/about" IMAGE_VERSION="${TRAVIS_COMMIT:0:8}" ./scripts/release docker
       after_success:
         - bash <(curl -s https://codecov.io/bash)
 
@@ -31,19 +31,9 @@ jobs:
         - curl -q -sSL --max-time 10 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "docker_promote"
         - scripts/docker_promote "${DOCKER_USER}/about" "${TRAVIS_COMMIT:0:8}"
 
-    - stage: Deploy
-
-      language: minimal
-      script:
-        - curl -q -sSL --max-time 10 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "deploy" "env_replace"
-        - scripts/env_replace docker-compose.yml DOCKER_USER | sed "s|\\\$|\$\$|g" > docker-compose-env.yml
-        - scripts/deploy about "@docker-compose-env.yml"
-
 stages:
   - Build
   - name: Publish
-    if: branch = master && type = push
-  - name: Deploy
     if: branch = master && type = push
 
 notifications:
