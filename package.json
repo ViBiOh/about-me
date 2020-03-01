@@ -35,7 +35,7 @@
   "homepage": "https://github.com/ViBiOh/about-me",
   "devDependencies": {
     "clean-css-cli": "4.3.0",
-    "date-fns": "2.9.0",
+    "date-fns": "2.10.0",
     "html-minifier": "4.0.0",
     "js-index-builder": "github:ViBiOh/js-index-builder#master",
     "js-utils": "github:ViBiOh/js-utils#master",
