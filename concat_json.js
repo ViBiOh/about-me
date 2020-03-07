@@ -1,12 +1,9 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const utils = require('js-utils');
+const fs = require('fs').promises;
 const crypto = require('crypto');
 const resumeSchema = require('resume-schema');
 const dateFns = require('date-fns');
-
-const readUTF8 = file => utils.asyncifyCallback(fs.readFile)(file, 'utf-8');
 
 function displaySuccess(output) {
   console.log(output);
@@ -73,7 +70,7 @@ function validateSchema(payload) {
 
 (async () => {
   try {
-    const content = await Promise.all(process.argv.slice(2).map(readUTF8));
+    const content = await Promise.all(process.argv.slice(2).map(file => fs.readFile(file, 'utf-8')));
 
     const jsonContent = content.map(c => JSON.parse(c));
     validateSchema(jsonContent[0]);
