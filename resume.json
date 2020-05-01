@@ -33,22 +33,23 @@
       "position": "Enseignant vacataire",
       "website": "http://www.iut.parisdescartes.fr",
       "startDate": "2013-09-01",
-      "summary": "Teaching assistant for courses Introduction to Algorithms and Programming (IAP), Data Structure and Algorithms (SDA) and Software Engineering Methods. Courses taught in 1st year degree and Licence Miage.",
+      "summary": "Teaching assistant for courses Introduction to Algorithms and Programming (IAP), Data Structure and Algorithms (SDA) and <a href=\"https://l3miage.fr\" rel=\"noopener noreferrer\">Software Engineering Methods</a>. Courses taught in 1st year degree and Licence Miage.",
       "highlights": []
     },
     {
       "company": "MeilleursAgents.com",
-      "position": "Front End Developer & Lead Developer then Productivity Engineer",
+      "position": "Front End Developer & Team Manager then Productivity Engineer",
       "website": "https://www.meilleursagents.com",
       "startDate": "2017-05-02",
-      "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Past Sale Report for realtors. Migrating real estate estimate form from HTML/PHP to React-Redux-Saga architecture with better modularity. Launching brand new product for realtors allowing to browse past sales. Releasing and contributing to our <a href=\"https://www.npmjs.com/package/react-mapbox-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">open source React Mapbox wrapper</a>. Spreading of knowledge sharing between tech teams and <a href=\"https://talks.vibioh.fr/indus_e2e/\" target=\"_blank\" rel=\"noopener noreferrer\">functional testing culture</a>.<br><br>Improving productivity of engineering teams by writing and/or adding new tools, spreading new code conventions in a growing team, speeding up continuous integration, onboarding new members.",
+      "summary": "Front-end development. Redesign of <a href=\"https://www.meilleursagents.com/prix-immobilier/\" target=\"_blank\" rel=\"noopener noreferrer\">Prices Pages</a> with strong SEO consideration, implementation and faisability analysis of PDF Report generation for realtors. Migrating real estate estimate form from HTML/PHP to <a href=\"https://www.meilleursagents.com/estimation-immobiliere/form\" target=\"_blank\" rel=\"noopener noreferrer\">React-Redux-Saga architecture</a> with better modularity. Launching brand new product for realtors allowing to browse past sales. Releasing and contributing to our <a href=\"https://www.npmjs.com/package/react-mapbox-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\">open source React Mapbox wrapper</a>. Spreading of knowledge sharing between tech teams and <a href=\"https://talks.vibioh.fr/indus_e2e/\" target=\"_blank\" rel=\"noopener noreferrer\">functional testing culture</a>.<br><br>Improving productivity of engineering teams by <a href=\"https://medium.com/meilleursagents-engineering/improve-code-quality-with-git-hooks-part-2-fa69ed30a1b8\" target=\"_blank\" rel=\"noopener noreferrer\">writing</a> and <a href=\"https://medium.com/meilleursagents-engineering/passwords-sharing-in-a-dev-team-58779d99fe81\" target=\"_blank\" rel=\"noopener noreferrer\">adding new tools</a>, spreading <a href=\"https://github.com/MeilleursAgents/JudCoCo\" target=\"_blank\" rel=\"noopener noreferrer\">new code conventions</a> and <a href=\"https://github.com/MeilleursAgents/terraform-provider-ansiblevault\" target=\"_blank\" rel=\"noopener noreferrer\">devops philosophy</a> in a growing team, speeding up continuous integration, onboarding new members. Training developers to Docker & Kubernetes ecosystem and actively migrating apps from classic instances to this new infrastructure. Creating severals Slack integrations, notably an \"ops\" bot which push continuous integration status to developers.",
       "highlights": [
         "javascript",
         "react",
         "terraform",
-        "Kubernetes",
+        "kubernetes",
         "ansible",
-        "golang"
+        "golang",
+        "open-source"
       ]
     },
     {
