@@ -3,6 +3,10 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
 metadata:
   name: about-redirect
+  labels:
+    app.kubernetes.io/name: about
+    app.kubernetes.io/instance: about
+    app.kubernetes.io/managed-by: kubectl
 spec:
   redirectRegex:
     regex: ^https?://www.vibioh.fr(.*)
@@ -13,6 +17,10 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: about-http
+  labels:
+    app.kubernetes.io/name: about
+    app.kubernetes.io/instance: about
+    app.kubernetes.io/managed-by: kubectl
 spec:
   entryPoints:
     - http
@@ -31,6 +39,10 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: about-https
+  labels:
+    app.kubernetes.io/name: about
+    app.kubernetes.io/instance: about
+    app.kubernetes.io/managed-by: kubectl
 spec:
   entryPoints:
     - https
