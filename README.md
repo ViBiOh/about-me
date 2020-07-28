@@ -15,4 +15,5 @@ npm start
 ```
 
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FViBiOh%2Fabout-me.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FViBiOh%2Fabout-me?ref=badge_large)
