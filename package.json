@@ -4,7 +4,7 @@
   "description": "Site de présentation personnel",
   "main": "dist/index.html",
   "scripts": {
-    "init": "curl -q -sSL --max-time 10 'https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap' | bash -s 'git_hooks'",
+    "init": "curl -q -sSL --max-time 30 'https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap' | bash -s 'git_hooks'",
     "clean": "rm -rf ./dist && rm -rf ./tmp && rm -rf src/html/mustache.json && mkdir ./tmp && mkdir -p ./dist/img",
     "copy:robots": "cp ./src/robots.txt ./dist/",
     "copy:favicon": "cp ./src/favicon/* ./dist/",
