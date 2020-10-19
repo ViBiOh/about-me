@@ -140,9 +140,9 @@
       "keywords": ["Golang", "COBOL", "SQL", "SpringBoot"]
     },
     {
-      "name": "DevOps",
+      "name": "DevOps / GitOps",
       "level": "",
-      "keywords": ["Bash", "Terraform", "Ansible", "Kubernetes"]
+      "keywords": ["Bash", "Terraform", "Ansible", "Kubernetes", "Flux"]
     }
   ],
   "languages": [
@@ -166,7 +166,7 @@
     },
     {
       "name": "Guts",
-      "keywords": ["Epicurism", "Pun"]
+      "keywords": ["Epicurism", "Pun", "Cooking"]
     }
   ],
   "references": []
