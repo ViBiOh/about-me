@@ -41,7 +41,7 @@ jobs:
         run: |
           curl -q -sSL --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "release"
           IMAGE_VERSION="${{ github.sha }}"
-          DOCKER_IMAGE="${DOCKER_USER}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" ./scripts/release docker
+          DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" ./scripts/release docker
 
   publish:
     name: Publish
@@ -57,4 +57,4 @@ jobs:
         run: |
           curl -q -sSL --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "docker_promote"
           IMAGE_VERSION="${{ github.sha }}"
-          scripts/docker_promote "${DOCKER_USER}/about" "${IMAGE_VERSION:0:8}"
+          scripts/docker_promote "${{ secrets.DOCKER_USER }}/about" "${IMAGE_VERSION:0:8}"
