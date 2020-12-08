@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASS }}
       - name: Docker
         run: |
-          curl -q -sSL --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "release"
+          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "release"
           IMAGE_VERSION="${{ github.sha }}"
           DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" ./scripts/release docker
 
@@ -55,6 +55,6 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
           DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
         run: |
-          curl -q -sSL --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "docker_promote"
+          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/master/bootstrap" | bash -s "docker_promote"
           IMAGE_VERSION="${{ github.sha }}"
           scripts/docker_promote "${{ secrets.DOCKER_USER }}/about" "${IMAGE_VERSION:0:8}"
