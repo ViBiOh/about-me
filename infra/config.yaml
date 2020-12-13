@@ -1,4 +1,3 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
@@ -15,21 +14,17 @@ spec:
         name: vibioh
         namespace: flux-system
       interval: 120m
-
   values:
     nameOverride: about
-
     image:
       repository: vibioh/about # {"$imagepolicy": "default:about"}
-
     config:
       VIWS_LOGGER_JSON: "true"
-
     ingress:
       enabled: true
       hosts:
-        - vibioh.fr
-        - www.vibioh.fr
+      - vibioh.fr
+      - www.vibioh.fr
       redirect:
         regex: ^https?://www.vibioh.fr(.*)
         replacement: https://vibioh.fr${1}
