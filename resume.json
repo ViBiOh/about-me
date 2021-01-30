@@ -11,7 +11,7 @@
     },
     "profiles": [
       {
-        "network": "Github",
+        "network": "GitHub",
         "username": "ViBiOh",
         "url": "https://github.com/ViBiOh"
       },
@@ -23,7 +23,7 @@
       {
         "network": "LinkedIn",
         "username": "vboutour",
-        "url": "https://linkedin.com/in/vboutour/"
+        "url": "https://www.linkedin.com/in/vboutour/"
       }
     ]
   },
@@ -41,7 +41,7 @@
       "position": "Senior Software Engineer in Engineering Productivity",
       "website": "https://www.blablacar.fr",
       "startDate": "2020-09-28",
-      "summary": "Too soon to describe what I've done!"
+      "summary": "Migrating Nexus artifacts to GitHub Packages. Migrating Bitbucket repositories to GitHub. GitOps support and monitoring in multiples cloud providers."
     },
     {
       "company": "MeilleursAgents",
