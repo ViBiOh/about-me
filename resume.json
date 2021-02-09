@@ -138,19 +138,19 @@
   "publications": [],
   "skills": [
     {
-      "name": "Web",
-      "level": "Master",
-      "keywords": ["JavaScript", "React / Redux", "CSS"]
-    },
-    {
       "name": "Back-end",
       "level": "",
-      "keywords": ["Golang", "COBOL", "SQL", "SpringBoot"]
+      "keywords": ["Golang", "COBOL", "SQL"]
     },
     {
       "name": "DevOps / GitOps",
       "level": "",
       "keywords": ["Bash", "Terraform", "Ansible", "Kubernetes", "Flux"]
+    },
+    {
+      "name": "Web",
+      "level": "Master",
+      "keywords": ["JavaScript", "React / Redux", "CSS"]
     }
   ],
   "languages": [
