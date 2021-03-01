@@ -24,7 +24,7 @@ spec:
   values:
     nameOverride: about
     image:
-      repository: vibioh/about:202102280747 # {"$imagepolicy": "default:flux-about-web"}
+      repository: vibioh/about:202103011633 # {"$imagepolicy": "default:flux-about-web"}
     config:
       VIWS_LOGGER_JSON: "true"
     ingress:
