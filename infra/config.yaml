@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: app
-      version: '0.0.48'
+      version: "0.0.48"
       sourceRef:
         kind: HelmRepository
         name: vibioh
@@ -26,14 +26,14 @@ spec:
     nameOverride: about
     image:
       name: vibioh/about
-      tag: 202103020807 # {"$imagepolicy": "default:flux-about-web:tag"}
+      tag: "202103020807" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
-      VIWS_LOGGER_JSON: 'true'
+      VIWS_LOGGER_JSON: "true"
     ingress:
       enabled: true
       hosts:
-      - vibioh.fr
-      - www.vibioh.fr
+        - vibioh.fr
+        - www.vibioh.fr
       redirect:
         regex: ^https?://www.vibioh.fr(.*)
         replacement: https://vibioh.fr${1}
