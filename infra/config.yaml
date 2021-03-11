@@ -26,7 +26,7 @@ spec:
     nameOverride: about
     image:
       name: vibioh/about
-      tag: "202103092217" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tag: "202103111321" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
       VIWS_LOGGER_JSON: "true"
     ingress:
