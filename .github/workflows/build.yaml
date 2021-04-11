@@ -33,10 +33,6 @@ jobs:
       - uses: codecov/codecov-action@v1
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-      - name: Docker
-        run: |
-          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap" | bash -s "release"
-          IMAGE_VERSION="${{ github.sha }}"
       - name: Login to DockerHub
         if: env.DOCKER_USER && env.DOCKER_PASS
         env:
@@ -52,6 +48,8 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
           DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
         run: |
+          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap" | bash -s "release"
+          IMAGE_VERSION="${{ github.sha }}"
           DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" ./scripts/release docker
 
   publish:
