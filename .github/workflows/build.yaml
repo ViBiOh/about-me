@@ -33,6 +33,8 @@ jobs:
           npm ci
           npm run build
           git --no-pager diff && git diff --quiet
+      - name: Codecov
+        uses: codecov/codecov-action@v1
       - name: Setup Docker
         uses: docker/setup-buildx-action@v1
       - name: Setup DockerHub
@@ -53,8 +55,6 @@ jobs:
           curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap" | bash -s "release"
           IMAGE_VERSION="${{ github.sha }}"
           DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" ./scripts/release docker
-      - name: Codecov
-        uses: codecov/codecov-action@v1
 
   sonarcloud:
     name: SonarCloud
@@ -66,6 +66,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: SonarCloud
+        if: env.SONAR_TOKEN
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
