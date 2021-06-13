@@ -29,11 +29,12 @@ spec:
     config:
       VIWS_LOGGER_JSON: "true"
       VIWS_PROMETHEUS_GZIP: "false"
+      VIWS_GZIP: "false"
     ingress:
       enabled: true
       hosts:
-      - vibioh.fr
-      - www.vibioh.fr
+        - vibioh.fr
+        - www.vibioh.fr
       redirect:
         regex: ^https?://www.vibioh.fr(.*)
         replacement: https://vibioh.fr${1}
