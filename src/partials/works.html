@@ -16,6 +16,7 @@
 
         <span class="informations">
           {{#summary}}
+            <input id="{{id}}" type="checkbox" class="toggler" tabindex="-1">
             <label class="toggle" for="{{id}}" tabindex="0" onkeydown="toggleKeyboard(event)" role="button">
               {{#endDate}}
                 {{startDate}} - {{endDate}}
@@ -28,7 +29,6 @@
             {{#duration}}
               ({{duration}})
             {{/duration}}
-            <input id="{{id}}" type="checkbox" tabindex="-1">
             <p itemprop="description">{{{summary}}}</p>
           {{/summary}}
         </span>
