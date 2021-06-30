@@ -41,7 +41,8 @@
       "position": "Senior Software Engineer in Engineering Productivity",
       "website": "https://www.blablacar.fr",
       "startDate": "2020-09-28",
-      "summary": "Migrating Nexus artifacts & BitBucket repositories to GitHub. Migrating GitOps workflow from Flux to Flux2. Improving various in-house tools in Golang (CLI and in-cluster services). Support for all dev-related SaaS tools. Working in a multi-cloud enviroment.",
+      "endDate": "2021-07-16",
+      "summary": "Migration of Nexus artifacts and BitBucket repositories to GitHub. Migration of the GitOps workflow from Flux to Flux2. Improvement of various internal tools in Golang (CLI and clustered services). Support for all SaaS tools and documentation related to development. Improved continuous integration with observability, enrichment of pull-requests and parallelization. Working in a multi-cloud environment.",
       "highlights": [
         "kubernetes",
         "golang",
