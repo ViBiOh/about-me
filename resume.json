@@ -37,6 +37,14 @@
       "highlights": []
     },
     {
+      "company": "Molotov TV",
+      "position": "Backend Developer",
+      "website": "https://molotov.tv",
+      "startDate": "2021-07-19",
+      "summary": "The experiment has just started, let's leave time for the story to write!",
+      "highlights": ["golang"]
+    },
+    {
       "company": "BlaBlaCar",
       "position": "Senior Software Engineer in Engineering Productivity",
       "website": "https://www.blablacar.fr",
