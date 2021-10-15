@@ -32,6 +32,7 @@ spec:
       VIWS_GZIP: "false"
     ingress:
       enabled: true
+      compress: true
       hosts:
         - vibioh.fr
         - www.vibioh.fr
