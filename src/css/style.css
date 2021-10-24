@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-@import url('https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css');
+@import url("https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css");
 
 :root {
   --dark: #3a3a3a;
@@ -17,7 +17,16 @@
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Nue", sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    "Helvetica Nue",
+    sans-serif;
   font-size: 62.5%;
 }
 
@@ -219,7 +228,7 @@ strong {
 
 @media print {
   .body::after {
-    content: 'Save ink, share link. Save paper, use browser. https://vibioh.fr';
+    content: "Save ink, share link. Save paper, use browser. https://vibioh.fr";
   }
 
   .body > * {
