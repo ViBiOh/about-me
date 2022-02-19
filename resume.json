@@ -41,8 +41,8 @@
       "position": "Backend Developer",
       "website": "https://molotov.tv",
       "startDate": "2021-07-19",
-      "summary": "The experiment has just started, let's leave time for the story to write!",
-      "highlights": ["golang"]
+      "summary": "Part of the Molotov Solutions team, developing and improving the backend of the over-the-top platform for B2B clients by ensuring performance and scalability, internationalization, multiple payment providers and compatibility with B2C customers.",
+      "highlights": ["golang", "amqp", "redis", "aws"]
     },
     {
       "company": "BlaBlaCar",
