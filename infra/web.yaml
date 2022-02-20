@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: app
-      version: "0.0.80"
+      version: "0.0.81"
       sourceRef:
         kind: HelmRepository
         name: vibioh
@@ -34,11 +34,13 @@ spec:
       enabled: true
       compress: true
       hosts:
-      - vibioh.fr
-      - www.vibioh.fr
+        - vibioh.fr
+        - www.vibioh.fr
       redirect:
         regex: ^https?://www.vibioh.fr(.*)
         replacement: https://vibioh.fr${1}
     canary:
       enabled: true
       url: https://vibioh.fr
+    pprof:
+      enabled: true
