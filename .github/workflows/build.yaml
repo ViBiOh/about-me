@@ -87,7 +87,7 @@ jobs:
         run: |
           curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap" | bash -s -- "-c" "docker_promote"
           IMAGE_VERSION="${{ github.sha }}"
-          scripts/docker_promote "${{ secrets.DOCKER_USER }}/about" "${IMAGE_VERSION:0:8}"
+          scripts/docker_promote -d "$(git log -n 1 "--date=format:%Y%m%d%H%M" "--pretty=format:%cd")" "${{ secrets.DOCKER_USER }}/about" "${IMAGE_VERSION:0:8}"
       - name: Flux
         env:
           FLUX_TOKEN: ${{ secrets.FLUX_TOKEN }}
