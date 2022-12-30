@@ -39,7 +39,7 @@
     "html-minifier": "4.0.0",
     "js-index-builder": "github:ViBiOh/js-index-builder#main",
     "resume-schema": "1.0.0",
-    "stylelint": "14.16.0",
+    "stylelint": "14.16.1",
     "stylelint-config-standard": "29.0.0"
   },
   "stylelint": {
