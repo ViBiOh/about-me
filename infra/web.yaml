@@ -40,7 +40,7 @@ spec:
         regex: ^https?://www.vibioh.fr(.*)
         replacement: https://vibioh.fr${1}
     canary:
-      enabled: true
+      enabled: false
       url: https://vibioh.fr
     pprof:
       enabled: true
