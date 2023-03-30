@@ -27,9 +27,10 @@ spec:
       name: vibioh/about
       tag: "202303300903" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
+      GOMAXPROCS: "1"
+      VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
       VIWS_PROMETHEUS_GZIP: "false"
-      VIWS_GZIP: "false"
     ingress:
       enabled: true
       compress: true
