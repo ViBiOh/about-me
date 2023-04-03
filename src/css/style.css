@@ -144,7 +144,7 @@ strong {
   margin-top: 0.2rem;
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width > 900px) {
   .body {
     display: flex;
   }
