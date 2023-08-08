@@ -25,7 +25,7 @@ spec:
     nameOverride: about
     image:
       name: vibioh/about
-      tag: "202308040842" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tag: "202308080856" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
       GOMAXPROCS: "1"
       VIWS_GZIP: "false"
