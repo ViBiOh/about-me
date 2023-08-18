@@ -28,9 +28,10 @@ spec:
       tag: "202308171200" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
       GOMAXPROCS: "1"
+      OTEL_SERVICE_NAME: about-me
       VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
-      VIWS_PROMETHEUS_GZIP: "false"
+      VIWS_TELEMETRY_URL: otel-collector.observability:4317
     ingress:
       enabled: true
       compress: true
