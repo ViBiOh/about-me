@@ -77,7 +77,7 @@ function validateSchema(payload) {
 (async () => {
   try {
     const content = await Promise.all(
-      process.argv.slice(2).map((file) => fs.readFile(file, "utf-8"))
+      process.argv.slice(2).map((file) => fs.readFile(file, "utf-8")),
     );
 
     const jsonContent = content.map((c) => JSON.parse(c));
