@@ -29,7 +29,6 @@ spec:
     config:
       GOMAXPROCS: "1"
       OTEL_SERVICE_NAME: about-me
-      OTEL_METRIC_EXPORT_INTERVAL: 30s
       VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
       VIWS_TELEMETRY_URL: otel-collector.observability:4317
