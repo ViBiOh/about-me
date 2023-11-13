@@ -25,7 +25,7 @@ spec:
     nameOverride: about
     image:
       name: vibioh/about
-      tag: "202311070853" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tag: "202311132345" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
       GOMAXPROCS: "1"
       OTEL_SERVICE_NAME: about-me
