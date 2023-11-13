@@ -41,6 +41,7 @@
       "position": "Backend Developer",
       "website": "https://molotov.tv",
       "startDate": "2021-07-19",
+      "endDate": "2023-11-17",
       "summary": "Part of the Molotov Solutions team, developing and improving the backend of the over-the-top platform for B2B clients by ensuring performance and scalability, internationalization, multiple payment providers and compatibility with B2C customers. On Fubo, creating a subscription system from scratch, on multiple continents, with relying on multiples third-party payment providers.",
       "highlights": ["golang", "amqp", "redis", "aws"]
     },
