@@ -31,7 +31,7 @@ spec:
       OTEL_SERVICE_NAME: about-me
       VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
-      VIWS_TELEMETRY_URL: otel-collector.observability:4317
+      VIWS_TELEMETRY_URL: datadog.observability:4317
     ingress:
       enabled: true
       compress: true
