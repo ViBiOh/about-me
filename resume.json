@@ -37,6 +37,14 @@
       "highlights": []
     },
     {
+      "company": "Datadog",
+      "position": "senior Software Engineer",
+      "website": "https://datadoghq.com",
+      "startDate": "2023-11-27",
+      "summary": "AWS Integrations",
+      "highlights": ["golang", "aws"]
+    },
+    {
       "company": "Molotov TV",
       "position": "Backend Developer",
       "website": "https://molotov.tv",
