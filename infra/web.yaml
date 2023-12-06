@@ -28,6 +28,7 @@ spec:
       tag: "202312050813" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
       GOMAXPROCS: "1"
+      OTEL_RESOURCE_ATTRIBUTES: env=production
       OTEL_SERVICE_NAME: about-me
       VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
