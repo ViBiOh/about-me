@@ -66,13 +66,12 @@ strong {
 }
 
 .header {
-  align-content: center;
   align-items: center;
   background-color: var(--dark);
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding: 2rem;
+  place-content: center center;
   text-align: center;
   width: 100%;
 }
