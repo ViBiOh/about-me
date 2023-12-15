@@ -65,7 +65,7 @@ jobs:
         run: |
           curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap" | bash -s -- "-c" "release"
           IMAGE_VERSION="${{ github.sha }}"
-          DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" ./scripts/release docker
+          DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" GIT_SHA="${IMAGE_VERSION}" ./scripts/release docker
 
   sonarcloud:
     name: SonarCloud

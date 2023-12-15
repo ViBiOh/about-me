@@ -28,7 +28,7 @@ spec:
       tag: "202312141638" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
       GOMAXPROCS: "1"
-      OTEL_RESOURCE_ATTRIBUTES: env=production
+      OTEL_RESOURCE_ATTRIBUTES: env=production,git.repository_url=github.com/ViBiOh/about-me
       OTEL_SERVICE_NAME: about-me
       VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
