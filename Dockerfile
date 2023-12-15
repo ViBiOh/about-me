@@ -6,4 +6,7 @@ ENV VIWS_HEADERS X-UA-Compatible:ie=edge,content-language:fr
 ARG VERSION
 ENV VERSION=${VERSION}
 
+ARG GIT_SHA
+ENV GIT_SHA=${GIT_SHA}
+
 COPY dist/ /www/
