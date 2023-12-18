@@ -25,7 +25,7 @@ spec:
     nameOverride: about
     image:
       name: vibioh/about
-      tag: "202312152353" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tag: "202312180922" # {"$imagepolicy": "default:flux-about-web:tag"}
     config:
       GOMAXPROCS: "1"
       OTEL_RESOURCE_ATTRIBUTES: env=production,git.repository_url=github.com/ViBiOh/about-me
