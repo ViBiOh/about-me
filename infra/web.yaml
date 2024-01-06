@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: app
-      version: "0.0.92"
+      version: "0.0.94"
       sourceRef:
         kind: HelmRepository
         name: vibioh
@@ -34,7 +34,7 @@ spec:
       VIWS_LOGGER_JSON: "true"
       VIWS_TELEMETRY_URL: datadog.observability:4317
     ingress:
-      enabled: false
+      enabled: true
       compress: true
       hosts:
         - vibioh.fr
