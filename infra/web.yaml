@@ -34,7 +34,7 @@ spec:
       VIWS_LOGGER_JSON: "true"
       VIWS_TELEMETRY_URL: datadog.observability:4317
     ingress:
-      enabled: true
+      enabled: false
       compress: true
       hosts:
         - vibioh.fr
