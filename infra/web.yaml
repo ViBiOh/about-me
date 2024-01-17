@@ -26,10 +26,29 @@ spec:
     image:
       name: vibioh/about
       tag: "202401172227" # {"$imagepolicy": "default:flux-about-web:tag"}
+    labels:
+      tags.datadoghq.com/env: "production"
+      tags.datadoghq.com/service: "about-me"
+      tags.datadoghq.com/version: "202401172227" # {"$imagepolicy": "default:flux-about-web:tag"}
+    env:
+      - name: GOMAXPROCS
+        valueFrom:
+          resourceFieldRef:
+            resource: limits.cpu
+      - name: GOMEMLIMIT
+        valueFrom:
+          resourceFieldRef:
+            resource: limits.memory
+      - name: VERSION
+        valueFrom:
+          fieldRef:
+            fieldPath: metadata.labels['tags.datadoghq.com/version']
+      - name: OTEL_SERVICE_NAME
+        valueFrom:
+          fieldRef:
+            fieldPath: metadata.labels['tags.datadoghq.com/service']
     config:
-      GOMAXPROCS: "1"
       OTEL_RESOURCE_ATTRIBUTES: env=production,git.repository_url=github.com/ViBiOh/about-me
-      OTEL_SERVICE_NAME: about-me
       VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
       VIWS_TELEMETRY_URL: datadog.observability:4317
