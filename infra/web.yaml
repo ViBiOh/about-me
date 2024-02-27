@@ -25,11 +25,11 @@ spec:
     nameOverride: about
     image:
       name: vibioh/about
-      tag: "202402060912" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tag: "202402271121" # {"$imagepolicy": "default:flux-about-web:tag"}
     labels:
       tags.datadoghq.com/env: "production"
       tags.datadoghq.com/service: "about-me"
-      tags.datadoghq.com/version: "202402060912" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tags.datadoghq.com/version: "202402271121" # {"$imagepolicy": "default:flux-about-web:tag"}
     env:
       - name: GOMAXPROCS
         valueFrom:
