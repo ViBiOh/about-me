@@ -54,3 +54,5 @@ spec:
       VIWS_TELEMETRY_URL: datadog.observability:4317
     pprof:
       enabled: true
+    autoscaling:
+      enabled: false
