@@ -67,21 +67,6 @@ jobs:
           IMAGE_VERSION="${{ github.sha }}"
           DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" GIT_SHA="${IMAGE_VERSION}" ./scripts/release docker
 
-  sonarcloud:
-    name: SonarCloud
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: SonarCloud
-        if: env.SONAR_TOKEN
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
   publish:
     name: Publish
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
