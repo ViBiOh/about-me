@@ -63,9 +63,9 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
           DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
         run: |
-          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap" | bash -s -- "-c" "release"
+          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap.sh" | bash -s -- "-c" "release.sh"
           IMAGE_VERSION="${{ github.sha }}"
-          DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" GIT_SHA="${IMAGE_VERSION}" ./scripts/release docker
+          DOCKER_IMAGE="${{ secrets.DOCKER_USER }}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" GIT_SHA="${IMAGE_VERSION}" ./scripts/release.sh docker
 
   publish:
     name: Publish
@@ -80,9 +80,9 @@ jobs:
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
           DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
         run: |
-          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap" | bash -s -- "-c" "docker_promote"
+          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap.sh" | bash -s -- "-c" "docker_promote.sh"
           IMAGE_VERSION="${{ github.sha }}"
-          scripts/docker_promote -d "$(git log -n 1 "--date=format:%Y%m%d%H%M" "--pretty=format:%cd")" "${{ secrets.DOCKER_USER }}/about" "${IMAGE_VERSION:0:8}"
+          scripts/docker_promote.sh -d "$(git log -n 1 "--date=format:%Y%m%d%H%M" "--pretty=format:%cd")" "${{ secrets.DOCKER_USER }}/about" "${IMAGE_VERSION:0:8}"
       - name: Flux
         env:
           FLUX_TOKEN: ${{ secrets.FLUX_TOKEN }}
