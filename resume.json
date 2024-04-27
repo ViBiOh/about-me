@@ -41,8 +41,11 @@
       "position": "Senior Software Engineer",
       "website": "https://www.datadoghq.com",
       "startDate": "2023-11-27",
-      "summary": "AWS Integrations",
-      "highlights": ["golang", "aws"]
+      "summary": "Backend engineer in Golang for the AWS Integrations team.",
+      "highlights": [
+        "golang",
+        "aws"
+      ]
     },
     {
       "company": "Molotov TV",
@@ -51,7 +54,12 @@
       "startDate": "2021-07-19",
       "endDate": "2023-11-17",
       "summary": "Part of the Molotov Solutions team, developing and improving the backend of the over-the-top platform for B2B clients by ensuring performance and scalability, internationalization, multiple payment providers and compatibility with B2C customers. On Fubo, creating a subscription system from scratch, on multiple continents, with relying on multiples third-party payment providers.",
-      "highlights": ["golang", "amqp", "redis", "aws"]
+      "highlights": [
+        "golang",
+        "amqp",
+        "redis",
+        "aws"
+      ]
     },
     {
       "company": "BlaBlaCar",
@@ -110,7 +118,14 @@
       "startDate": "2014-04-01",
       "endDate": "2015-05-31",
       "summary": "Maintenance and development of Omnikles products (dematerialization) and CertEurope (digital certificate), two companies of Oodrive's group. Improving main Oodrive's product : Easyshare. Handling websockets communication in a clustered environment and improving API for mobile apps. Developing tools for Q&A team in NodeJS.",
-      "highlights": ["java", "javascript", "angular", "spring", "git", "agile"]
+      "highlights": [
+        "java",
+        "javascript",
+        "angular",
+        "spring",
+        "git",
+        "agile"
+      ]
     },
     {
       "company": "Euraxiel",
@@ -119,7 +134,12 @@
       "startDate": "2008-04-01",
       "endDate": "2014-03-31",
       "summary": "Installation of Recital and 'Dictionnaire de Données' products to various clients. Adaptation to the characteristics of each environment for the realization of the middleware between the frontend, in HTML & Java, and Cobol business backend. Performance management and maintainability on a transactionnal environment.<br><br>Performance audit of a Java application and application patch during the implementation phase. Reliability and routing control of a customer migration at BNP Paribas. Management of volumetry. Transverse vision and technological choices (Office, Java and Mainframe) to meet the need.<br><br>Modeling, analysis and U.M.L. designing of a staff management application at <strong>BNP Paribas</strong>. Design for both a Java w/ Oracle and Cobol w/ DB2 targets.<br><br>Working on an electronic banking litigation management application in <strong>Partecis</strong>, on PACBASE mainframe environment and international electronic banking compensations, VISA and MasterCard.",
-      "highlights": ["COBOL", "Pacbase", "Mainframe", "VBA"]
+      "highlights": [
+        "COBOL",
+        "Pacbase",
+        "Mainframe",
+        "VBA"
+      ]
     }
   ],
   "volunteer": [],
@@ -158,17 +178,31 @@
     {
       "name": "Back-end",
       "level": "",
-      "keywords": ["Golang", "COBOL", "SQL"]
+      "keywords": [
+        "Golang",
+        "COBOL",
+        "SQL"
+      ]
     },
     {
       "name": "DevOps / GitOps",
       "level": "",
-      "keywords": ["Bash", "Terraform", "Ansible", "Kubernetes", "Flux"]
+      "keywords": [
+        "Bash",
+        "Terraform",
+        "Ansible",
+        "Kubernetes",
+        "Flux"
+      ]
     },
     {
       "name": "Web",
       "level": "Master",
-      "keywords": ["JavaScript", "React / Redux", "CSS"]
+      "keywords": [
+        "JavaScript",
+        "React / Redux",
+        "CSS"
+      ]
     }
   ],
   "languages": [
@@ -184,15 +218,26 @@
   "interests": [
     {
       "name": "Sport",
-      "keywords": ["Rowing", "Biking", "Skiing"]
+      "keywords": [
+        "Rowing",
+        "Biking",
+        "Skiing"
+      ]
     },
     {
       "name": "Technology",
-      "keywords": ["IoT", "Pieces of Machinery"]
+      "keywords": [
+        "IoT",
+        "Pieces of Machinery"
+      ]
     },
     {
       "name": "Guts",
-      "keywords": ["Epicurism", "Pun", "Cooking"]
+      "keywords": [
+        "Epicurism",
+        "Pun",
+        "Cooking"
+      ]
     }
   ],
   "references": []
