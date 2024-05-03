@@ -51,6 +51,7 @@ spec:
       OTEL_RESOURCE_ATTRIBUTES: env=production,git.repository_url=github.com/ViBiOh/about-me
       VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
+      VIWS_PPROF_AGENT: http://datadog.observability:8126
       VIWS_TELEMETRY_URL: datadog.observability:4317
     pprof:
       enabled: true
