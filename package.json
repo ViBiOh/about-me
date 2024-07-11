@@ -38,7 +38,7 @@
     "date-fns": "3.6.0",
     "html-minifier": "4.0.0",
     "js-index-builder": "github:ViBiOh/js-index-builder#main",
-    "resume-schema": "1.0.0",
+    "resume-schema": "1.0.1",
     "stylelint": "16.6.1",
     "stylelint-config-standard": "36.0.1"
   },
