@@ -41,7 +41,7 @@
       "position": "Senior Software Engineer",
       "website": "https://www.datadoghq.com",
       "startDate": "2023-11-27",
-      "summary": "Backend engineer in Golang for the AWS Integrations team.",
+      "summary": "Backend engineer in Golang for the AWS Integrations team, improved crawler reliability at scale",
       "highlights": [
         "golang",
         "aws"
