@@ -29,14 +29,6 @@
   },
   "work": [
     {
-      "company": "Université Paris Descartes",
-      "position": "Enseignant vacataire",
-      "website": "http://www.iut.parisdescartes.fr",
-      "startDate": "2013-09-01",
-      "summary": "Teaching assistant for courses Introduction to Algorithms and Programming (IAP), Data Structure and Algorithms (SDA) and <a href=\"https://l3miage.fr\">Software Engineering Methods</a>. Courses taught in 1st year degree and Licence Miage.",
-      "highlights": []
-    },
-    {
       "company": "Datadog",
       "position": "Senior Software Engineer",
       "website": "https://www.datadoghq.com",
@@ -46,6 +38,14 @@
         "golang",
         "aws"
       ]
+    },
+    {
+      "company": "Université Paris Descartes",
+      "position": "Enseignant vacataire",
+      "website": "http://www.iut.parisdescartes.fr",
+      "startDate": "2013-09-01",
+      "summary": "Teaching assistant for courses Introduction to Algorithms and Programming (IAP), Data Structure and Algorithms (SDA) and <a href=\"https://l3miage.fr\">Software Engineering Methods</a>. Courses taught in 1st year degree and Licence Miage.",
+      "highlights": []
     },
     {
       "company": "Molotov TV",
