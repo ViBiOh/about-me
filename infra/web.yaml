@@ -55,3 +55,10 @@ spec:
       VIWS_TELEMETRY_URL: datadog.observability:4317
     autoscaling:
       enabled: false
+    ingress:
+      enabled: true
+      compress: true
+      tls:
+        enabled: true
+      hosts:
+        - vibioh.fr
