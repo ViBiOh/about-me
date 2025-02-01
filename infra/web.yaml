@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: app
-      version: "0.1.5"
+      version: "0.1.7"
       sourceRef:
         kind: HelmRepository
         name: vibioh
@@ -63,3 +63,6 @@ spec:
       hosts:
         - vibioh.fr
         - www.vibioh.fr
+      redirect:
+        regex: ^https?://www.vibioh.fr(.*)
+        replacement: https://vibioh.fr${1}
