@@ -53,6 +53,7 @@ jobs:
           DOCKER_NAMESPACE: ${{ vars.DOCKER_NAMESPACE }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
         run: |
+          curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap.sh" | bash -s -- "-c" "release.sh"
           docker login "${DOCKER_REGISTRY}/${DOCKER_NAMESPACE}" -u nologin --password-stdin <<< "${SCW_SECRET_KEY}"
           IMAGE_VERSION="${{ github.sha }}"
           DOCKER_IMAGE="${DOCKER_REGISTRY}/${DOCKER_NAMESPACE}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" GIT_SHA="${IMAGE_VERSION}" ./scripts/release.sh docker
