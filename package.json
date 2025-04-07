@@ -40,7 +40,7 @@
     "js-index-builder": "github:ViBiOh/js-index-builder#main",
     "resume-schema": "1.0.1",
     "stylelint": "16.18.0",
-    "stylelint-config-standard": "37.0.0"
+    "stylelint-config-standard": "38.0.0"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
