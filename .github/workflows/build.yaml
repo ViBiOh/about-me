@@ -79,6 +79,7 @@ jobs:
           IMAGE_VERSION="${{ github.sha }}"
           scripts/docker_promote.sh -d "$(git log -n 1 "--date=format:%Y%m%d%H%M" "--pretty=format:%cd")" "${DOCKER_NAMESPACE}/about" "${IMAGE_VERSION:0:8}"
       - name: Flux
+        if: emv.FLUX_WEBHOOK_URL
         env:
           FLUX_TOKEN: ${{ secrets.FLUX_TOKEN }}
           FLUX_WEBHOOK_URL: ${{ secrets.FLUX_WEBHOOK_URL }}
