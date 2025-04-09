@@ -55,8 +55,7 @@ jobs:
         run: |
           curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap.sh" | bash -s -- "-c" "release.sh"
           docker login "${DOCKER_REGISTRY}/${DOCKER_NAMESPACE}" -u nologin --password-stdin <<< "${SCW_SECRET_KEY}"
-          IMAGE_VERSION="${{ github.sha }}"
-          DOCKER_IMAGE="${DOCKER_REGISTRY}/${DOCKER_NAMESPACE}/about" IMAGE_VERSION="${IMAGE_VERSION:0:8}" GIT_SHA="${IMAGE_VERSION}" ./scripts/release.sh docker
+          DOCKER_IMAGE="${DOCKER_REGISTRY}/${DOCKER_NAMESPACE}/$(make name)" IMAGE_VERSION="$(make version)" GIT_SHA="$(make version-full)" ./scripts/release.sh docker
 
   publish:
     name: Publish
@@ -76,8 +75,7 @@ jobs:
         run: |
           curl --disable --silent --show-error --location --max-time 30 "https://raw.githubusercontent.com/ViBiOh/scripts/main/bootstrap.sh" | bash -s -- "-c" "docker_promote.sh"
           docker login "${DOCKER_REGISTRY}/${DOCKER_NAMESPACE}" -u nologin --password-stdin <<< "${SCW_SECRET_KEY}"
-          IMAGE_VERSION="${{ github.sha }}"
-          scripts/docker_promote.sh -d "$(git log -n 1 "--date=format:%Y%m%d%H%M" "--pretty=format:%cd")" "${DOCKER_NAMESPACE}/about" "${IMAGE_VERSION:0:8}"
+          scripts/docker_promote.sh -d "$(make version-date)" "${DOCKER_NAMESPACE}/$(make name)" "$(make version)"
       - name: Flux
         if: env.FLUX_WEBHOOK_URL
         env:
