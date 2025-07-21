@@ -25,11 +25,11 @@ spec:
     nameOverride: about
     image:
       name: rg.fr-par.scw.cloud/vibioh/about
-      tag: "202507151545" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tag: "202507211053" # {"$imagepolicy": "default:flux-about-web:tag"}
     labels:
       tags.datadoghq.com/env: "production"
       tags.datadoghq.com/service: "about-me"
-      tags.datadoghq.com/version: "202507151545" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tags.datadoghq.com/version: "202507211053" # {"$imagepolicy": "default:flux-about-web:tag"}
     env:
       - name: GOMAXPROCS
         valueFrom:
