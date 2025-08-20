@@ -31,10 +31,6 @@ spec:
       tags.datadoghq.com/service: "about-me"
       tags.datadoghq.com/version: "202508132259" # {"$imagepolicy": "default:flux-about-web:tag"}
     env:
-      - name: GOMAXPROCS
-        valueFrom:
-          resourceFieldRef:
-            resource: limits.cpu
       - name: GOMEMLIMIT
         valueFrom:
           resourceFieldRef:
