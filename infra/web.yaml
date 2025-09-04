@@ -25,11 +25,11 @@ spec:
     nameOverride: about
     image:
       name: rg.fr-par.scw.cloud/vibioh/about
-      tag: "202508270719" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tag: "202509041518" # {"$imagepolicy": "default:flux-about-web:tag"}
     labels:
       tags.datadoghq.com/env: "production"
       tags.datadoghq.com/service: "about-me"
-      tags.datadoghq.com/version: "202508270719" # {"$imagepolicy": "default:flux-about-web:tag"}
+      tags.datadoghq.com/version: "202509041518" # {"$imagepolicy": "default:flux-about-web:tag"}
     env:
       - name: GOMEMLIMIT
         valueFrom:
