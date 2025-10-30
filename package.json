@@ -12,7 +12,7 @@
     "copy": "npm run copy:favicon && npm run copy:robots && npm run copy:img",
     "format": "",
     "style": "stylelint \"src/**/*.css\"",
-    "css": "cat ./src/css/style.css | cleancss -O2 -o ./tmp/style.css",
+    "css": "cat ./src/css/style.css | cleancss -O1 'all' -O2 'all' -o ./tmp/style.css",
     "concat-json": "./concat_json.js resume.json src/html/mustache_raw.json > src/html/mustache.json",
     "mustache": "./node_modules/js-index-builder/index.mjs -t \"src/html/**/*.html\" -b $(git rev-parse --short HEAD) -p \"src/partials/*.html\" -c ./tmp/style.css -j src/js/index.js -o ./tmp",
     "html-minify": "html-minifier --config-file ./html-minifier.json --input-dir ./tmp --output-dir ./dist",
@@ -20,7 +20,7 @@
     "structure": "./node_modules/js-index-builder/sitemap.mjs -j \"src/html/**/*.json\" -s ./dist/sitemap.xml",
     "build": "npm run clean && npm run style && npm run copy && npm run css && npm run structure && npm run html",
     "prestart": "go install github.com/ViBiOh/viws/cmd/viws-light@latest",
-    "start": "viws-light -directory ${INIT_CWD}/dist -csp \"default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net/npm/normalize.css@8.0.0/\" -header X-UA-Compatible:ie=edge -header content-language:fr"
+    "start": "viws-light -directory ${INIT_CWD}/dist -csp \"default-src 'self'; base-uri 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' cdn.jsdelivr.net/npm/normalize.css@8.0.1/\" -header X-UA-Compatible:ie=edge -header content-language:fr"
   },
   "repository": {
     "type": "git",
