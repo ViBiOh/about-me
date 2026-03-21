@@ -1,7 +1,5 @@
 @charset 'UTF-8';
 
-@import url("https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css");
-
 :root {
   --dark: #3a3a3a;
   --clear: #f8f8f8;
