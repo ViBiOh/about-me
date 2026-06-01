@@ -48,7 +48,7 @@ spec:
       VIWS_GZIP: "false"
       VIWS_LOGGER_JSON: "true"
       VIWS_PPROF_AGENT: http://datadog.observability:8126
-      VIWS_TELEMETRY_URL: datadog.observability:4317
+      VIWS_TELEMETRY_URL: otel-collector.observability:4317
     autoscaling:
       enabled: false
     ingress:
