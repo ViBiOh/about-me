@@ -33,7 +33,7 @@
       "position": "Senior Software Engineer",
       "website": "https://www.datadoghq.com",
       "startDate": "2023-11-27",
-      "summary": "Backend engineer in Golang for the AWS Integrations team. Contributed to the Resource Collection of many AWS services while handling scalability constraints. Improved log forwarding reliability and efficiency.\nAs a member of the Cloud Integrations Platform, handling scalability and reliability for common cloud integration teams' needs regarding resources, metrics and tags collection.",
+      "summary": "Backend engineer in Golang for the AWS Integrations team. Contributed to the Resource Collection of many AWS services while handling scalability constraints. Improved log forwarding reliability and efficiency.<br><br>As a member of the Cloud Integrations Platform, handling scalability and reliability for common cloud integration teams' needs regarding resources, metrics and tags collection.",
       "highlights": [
         "golang",
         "aws"
